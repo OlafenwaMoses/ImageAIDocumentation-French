@@ -3,91 +3,91 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Classes de prédiction
+Classes de pr≈Ωdiction
 ==================
-**ImageAI** fournit un ensemble de classes puissantes et faciles à utiliser pour accomplir les tâches de *reconnaissance sur les images*.
-Vous pouvez pourrez accomplir toutes ces taches de pointe de vision assistée par ordinateur avec du code python allant de 5 à 12 lignes de code. 
-Une fois que le python installe, d’autres bibliothèques et **ImageAI** installes dans votre ordinateur, il n’y a aucune limite aux applications incroyables que vous pouvez créer. Trouvez ci-dessous les classes et leur fonction respective rendues disponibles pour votre utilisation.
-Ces classes peuvent être intégrées dans n’importe quelle programme python traditionnel que vous développez, que cela soit un site internet, une application Windows/Linux/MacOS ou un système qui supporte ou fait partir d’un réseau local. 
+**ImageAI** fournit un ensemble de classes puissantes et faciles ÀÜ utiliser pour accomplir les t‚Ä∞ches de *reconnaissance sur les images*.
+Vous pouvez pourrez accomplir toutes ces taches de pointe de vision assist≈Ωe par ordinateur avec du code python allant de 5 ÀÜ 12 lignes de code. 
+Une fois que le python installe, d√ïautres biblioth¬èques et **ImageAI** installes dans votre ordinateur, il n√ïy a aucune limite aux applications incroyables que vous pouvez cr≈Ωer. Trouvez ci-dessous les classes et leur fonction respective rendues disponibles pour votre utilisation.
+Ces classes peuvent ¬être int≈Ωgr≈Ωes dans n√ïimporte quelle programme python traditionnel que vous d≈Ωveloppez, que cela soit un site internet, une application Windows/Linux/MacOS ou un syst¬ème qui supporte ou fait partir d√ïun r≈Ωseau local. 
 
 
 **======= imageai.Prediction.ImagePrediction =======**
 
-La classe **ImagePrediction** vous fournit des fonctions pour utiliser les modèles de reconnaissance d’images les plus pointus tel **SqueezeNet**, **ResNet**, **InceptionV3** et **DenseNet** qui ont été **pré-entraines** sur la base de données **ImageNet-1000**.  Ceci pour dire que vous pouvez utiliser ces classes pour détecter et reconnaitre plus de 1000 différents objets sur n’importe quelle image ou ensemble d’images. Pour initialiser la classe dans votre code, vous allez créer une instance dans votre code comme suit ::
+La classe **ImagePrediction** vous fournit des fonctions pour utiliser les mod¬èles de reconnaissance d√ïimages les plus pointus tel **SqueezeNet**, **ResNet**, **InceptionV3** et **DenseNet** qui ont ≈Ωt≈Ω **pr≈Ω-entraines** sur la base de donn≈Ωes **ImageNet-1000**.  Ceci pour dire que vous pouvez utiliser ces classes pour d≈Ωtecter et reconnaitre plus de 1000 diff≈Ωrents objets sur n√ïimporte quelle image ou ensemble d√ïimages. Pour initialiser la classe dans votre code, vous allez cr≈Ωer une instance dans votre code comme suit√ä::
     
     from imageai.Prediction import ImagePrediction
     prediction = ImagePrediction()
 
 
-Nous avons fourni les modèles pré-entraines de reconnaissance d’images des algorithmes suivants **SqueezeNet**, **ResNet**, **InceptionV3** et **DenseNet** que vous allez utiliser dans la classe **ImagePrediction** pour faire la reconnaissance sur les images. Trouvez ci-dessous le lien pour télécharger les modèles. Vous pouvez télécharger le modèle que vous voulez utiliser. 
+Nous avons fourni les mod¬èles pr≈Ω-entraines de reconnaissance d√ïimages des algorithmes suivants **SqueezeNet**, **ResNet**, **InceptionV3** et **DenseNet** que vous allez utiliser dans la classe **ImagePrediction** pour faire la reconnaissance sur les images. Trouvez ci-dessous le lien pour t≈Ωl≈Ωcharger les mod¬èles. Vous pouvez t≈Ωl≈Ωcharger le mod¬èle que vous voulez utiliser. 
 
 `Telechargez le modele SqueezeNet <https://github.com/OlafenwaMoses/ImageAI/releases/tag/1.0 />`_
 
-`Téléchargez le modèle ResNet <https://github.com/OlafenwaMoses/ImageAI/releases/tag/1.0 />`_
+`T≈Ωl≈Ωchargez le mod¬èle ResNet <https://github.com/OlafenwaMoses/ImageAI/releases/tag/1.0 />`_
 
-` Téléchargez le modèle InceptionV3 <https://github.com/OlafenwaMoses/ImageAI/releases/tag/1.0 />`_
+` T≈Ωl≈Ωchargez le mod¬èle InceptionV3 <https://github.com/OlafenwaMoses/ImageAI/releases/tag/1.0 />`_
 
-` Téléchargez le modèle DenseNet <https://github.com/OlafenwaMoses/ImageAI/releases/tag/1.0 />`_
+` T≈Ωl≈Ωchargez le mod¬èle DenseNet <https://github.com/OlafenwaMoses/ImageAI/releases/tag/1.0 />`_
 
-Après avoir créé une nouvelle instance de la classe **ImagePrediction**, Vous pouvez utiliser les fonctions ci-dessous pour définir les valeurs des propriétés et commencer la reconnaissance.   
+Apr¬ès avoir cr≈Ω≈Ω une nouvelle instance de la classe **ImagePrediction**, Vous pouvez utiliser les fonctions ci-dessous pour d≈Ωfinir les valeurs des propri≈Ωt≈Ωs et commencer la reconnaissance.   
 
-* **.setModelTypeAsSqueezeNet()** , cette fonction établit comme modèle pour votre instance de reconnaissance d’image que vous avez créé, le modèle **SqueezeNet** ; ce qui veut dire que vous accomplirez vos taches de prédiction en utilisant les modèles pré-entrainés de **SqueezeNet** que vous avez téléchargé avec le lien ci-dessus. Trouvez le code ci-dessous ::
+* **.setModelTypeAsSqueezeNet()** , cette fonction ≈Ωtablit comme mod¬èle pour votre instance de reconnaissance d√ïimage que vous avez cr≈Ω≈Ω, le mod¬èle **SqueezeNet**√ä; ce qui veut dire que vous accomplirez vos taches de pr≈Ωdiction en utilisant les mod¬èles pr≈Ω-entrain≈Ωs de **SqueezeNet** que vous avez t≈Ωl≈Ωcharg≈Ω avec le lien ci-dessus. Trouvez le code ci-dessous√ä::
 
 
     prediction.setModelTypeAsSqueezeNet()
 
 
-* **.setModelTypeAsResNet()** , cette fonction établit comme modèle pour votre instance de reconnaissance d’image que vous avez créé, le modèle **ResNet** ; ce qui veut dire que vous accomplirez vos taches de prédiction en utilisant les modèles pré-entrainés de **ResNet** que vous avez téléchargé avec le lien ci-dessus. Trouvez le code ci-dessous ::
+* **.setModelTypeAsResNet()** , cette fonction ≈Ωtablit comme mod¬èle pour votre instance de reconnaissance d√ïimage que vous avez cr≈Ω≈Ω, le mod¬èle **ResNet**√ä; ce qui veut dire que vous accomplirez vos taches de pr≈Ωdiction en utilisant les mod¬èles pr≈Ω-entrain≈Ωs de **ResNet** que vous avez t≈Ωl≈Ωcharg≈Ω avec le lien ci-dessus. Trouvez le code ci-dessous√ä::
 
 
     prediction.setModelTypeAsResNet()
 
 
-* **.setModelTypeAsInceptionV3()** , cette fonction établit comme modèle pour votre instance de reconnaissance d’image que vous avez créé, le modèle **InceptionV3** ; ce qui veut dire que vous accomplirez vos taches de prédiction en utilisant les modèles pré-entrainés de **InceptionV3** que vous avez téléchargé avec le lien ci-dessus. Trouvez le code ci-dessous ::
+* **.setModelTypeAsInceptionV3()** , cette fonction ≈Ωtablit comme mod¬èle pour votre instance de reconnaissance d√ïimage que vous avez cr≈Ω≈Ω, le mod¬èle **InceptionV3**√ä; ce qui veut dire que vous accomplirez vos taches de pr≈Ωdiction en utilisant les mod¬èles pr≈Ω-entrain≈Ωs de **InceptionV3** que vous avez t≈Ωl≈Ωcharg≈Ω avec le lien ci-dessus. Trouvez le code ci-dessous√ä::
 
 
 
     prediction.setModelTypeAsInceptionV3()
 
 
-* **.setModelTypeAsDenseNet()** , cette fonction établit comme modèle pour votre instance de reconnaissance d’image que vous avez créé, le modèle **DenseNet** ; ce qui veut dire que vous accomplirez vos taches de prédiction en utilisant les modèles pré-entrainés de **DenseNet** que vous avez téléchargé avec le lien ci-dessus. Trouvez le code ci-dessous ::
+* **.setModelTypeAsDenseNet()** , cette fonction ≈Ωtablit comme mod¬èle pour votre instance de reconnaissance d√ïimage que vous avez cr≈Ω≈Ω, le mod¬èle **DenseNet**√ä; ce qui veut dire que vous accomplirez vos taches de pr≈Ωdiction en utilisant les mod¬èles pr≈Ω-entrain≈Ωs de **DenseNet** que vous avez t≈Ωl≈Ωcharg≈Ω avec le lien ci-dessus. Trouvez le code ci-dessous√ä::
 
     prediction.setModelTypeAsDenseNet()
 
 
-* **.setModelPath()** , cette fonction accepte une chaine de caractère qui doit être le chemin vers le fichier modèle que vous avez téléchargé, il doit correspondre au type de modèle que vous avez choisi pour votre instance de prédiction/détection sur image. Trouvez un exemple de code, et paramètres de fonction ci-dessous ::
+* **.setModelPath()** , cette fonction accepte une chaine de caract¬ère qui doit ¬être le chemin vers le fichier mod¬èle que vous avez t≈Ωl≈Ωcharg≈Ω, il doit correspondre au type de mod¬èle que vous avez choisi pour votre instance de pr≈Ωdiction/d≈Ωtection sur image. Trouvez un exemple de code, et param¬ètres de fonction ci-dessous√ä::
     prediction.setModelPath("resnet50_weights_tf_dim_ordering_tf_kernels.h5")
 
- -- *paramètre* **model_path** (requis) : Il s’agit du chemin vers votre fichier modèle téléchargé.  
+ -- *param¬ètre* **model_path** (requis) : Il s√ïagit du chemin vers votre fichier mod¬èle t≈Ωl≈Ωcharg≈Ω.  
 
-* **.loadModel()** , Cette fonction charge le modèle à partir du chemin que vous avez spécifié dans l’appel de fonction ci-dessus dans votre instance de prédiction. Trouvez un exemple de code ci-dessous ::
+* **.loadModel()** , Cette fonction charge le mod¬èle ÀÜ partir du chemin que vous avez sp≈Ωcifi≈Ω dans l√ïappel de fonction ci-dessus dans votre instance de pr≈Ωdiction. Trouvez un exemple de code ci-dessous√ä::
 
     prediction.loadModel()
 
- -- *paramètre* **prediction_speed** (optionnel) : Ce paramètre vous permet de réduire jusqu’à 80% le temps qu’il faut pour la tache de prédiction sur une image, ce qui conduit à une légère réduction de la précision. Ce paramètre accepte les chaines de caractères. Les valeurs disponibles sont "normal", "fast", "faster" et "fastest". La valeur par défaut est "normal". 
+ -- *param¬ètre* **prediction_speed** (optionnel) : Ce param¬ètre vous permet de r≈Ωduire jusqu√ïÀÜ 80% le temps qu√ïil faut pour la tache de pr≈Ωdiction sur une image, ce qui conduit ÀÜ une l≈Ωg¬ère r≈Ωduction de la pr≈Ωcision. Ce param¬ètre accepte les chaines de caract¬ères. Les valeurs disponibles sont "normal", "fast", "faster" et "fastest". La valeur par d≈Ωfaut est "normal". 
 
 
-* **.predictImage()** , C’est la fonction qui effectue la tache de prédiction a proprement parle sur une image.  Elle peut être appelée plusieurs fois sur plusieurs images une fois que le modèle a été charge dans l’instance de prédiction. Trouvez un exemple de code, et paramètres de fonction ci-dessous ::
+* **.predictImage()** , C√ïest la fonction qui effectue la tache de pr≈Ωdiction a proprement parle sur une image.  Elle peut ¬être appel≈Ωe plusieurs fois sur plusieurs images une fois que le mod¬èle a ≈Ωt≈Ω charge dans l√ïinstance de pr≈Ωdiction. Trouvez un exemple de code, et param¬ètres de fonction ci-dessous√ä::
      
     predictions, probabilities = prediction.predictImage("image1.jpg", result_count=10)
 
 
- -- *paramètre* **image_input** (requis) : Il fait référence au chemin vers votre fichier images, tableau Numpy de votre image ou le fichier flux de votre image, dépendamment du type que vous avez choisi. 
+ -- *param¬ètre* **image_input** (requis) : Il fait r≈Ωf≈Ωrence au chemin vers votre fichier images, tableau Numpy de votre image ou le fichier flux de votre image, d≈Ωpendamment du type que vous avez choisi. 
 
 
- -- *paramètre* **result_count** (optionnel) : Il fait référence au nombre possible de prédictions qui doivent être retourne. Le paramètre a une valeur par défaut de 5. 
+ -- *param¬ètre* **result_count** (optionnel) : Il fait r≈Ωf≈Ωrence au nombre possible de pr≈Ωdictions qui doivent ¬être retourne. Le param¬ètre a une valeur par d≈Ωfaut de 5. 
 
 
- -- *paramètre* **input_type** (optionnel) : Il fait référence au type de la valeur d’entrée dans le paramètre **image_input**. Il est ‘file’ par défaut et accepte ‘array’ et ‘stream’ aussi.  
+ -- *param¬ètre* **input_type** (optionnel) : Il fait r≈Ωf≈Ωrence au type de la valeur d√ïentr≈Ωe dans le param¬ètre **image_input**. Il est √îfile√ï par d≈Ωfaut et accepte √îarray√ï et √îstream√ï aussi. √ä
 
 
- -- *valeur retournée* **prediction_results** (une liste python) : La première valeur renvoyée par la fonction **predictImage** est une liste qui contient tous les résultats possibles de prédiction. Les résultats sont arrangés dans l’ordre descendant de probabilité de pourcentage. 
+ -- *valeur retourn≈Ωe* **prediction_results** (une liste python) : La premi¬ère valeur renvoy≈Ωe par la fonction **predictImage** est une liste qui contient tous les r≈Ωsultats possibles de pr≈Ωdiction. Les r≈Ωsultats sont arrang≈Ωs dans l√ïordre descendant de probabilit≈Ω de pourcentage. 
 
- -- *valeur retournée* **prediction_probabilities** (une liste python) :
-La seconde valeur renvoyée par la fonction **predictImage** est une liste qui contient les pourcentages de probabilité correspondant à toutes les prédictions possibles dans **prediction_results**
+ -- *valeur retourn≈Ωe* **prediction_probabilities** (une liste python) :
+La seconde valeur renvoy≈Ωe par la fonction **predictImage** est une liste qui contient les pourcentages de probabilit≈Ω correspondant ÀÜ toutes les pr≈Ωdictions possibles dans **prediction_results**
 
 
-* **.predictMultipleImages()** , Cette fonction pour accomplir la prédictions sur 2 ou plusieurs images à la fois. Trouvez un exemple de code, et paramètres de fonction ci-dessous ::
+* **.predictMultipleImages()** , Cette fonction pour accomplir la pr≈Ωdictions sur 2 ou plusieurs images ÀÜ la fois. Trouvez un exemple de code, et param¬ètres de fonction ci-dessous√ä::
  
 
 
@@ -99,21 +99,21 @@ La seconde valeur renvoyée par la fonction **predictImage** est une liste qui co
             print(predictions[index] , " : " , percentage_probabilities[index])
         print("-----------------------")
 
-  -- *paramètre* **sent_images_array** (requis) : Il fait référence a une liste qui contient le chemin vers les fichiers images, les tableaux Numpy de vos images ou les fichiers de flux de vos images, dépendamment de type spécifie pour la valeur d’entrée. 
+  -- *param¬ètre* **sent_images_array** (requis) : Il fait r≈Ωf≈Ωrence a une liste qui contient le chemin vers les fichiers images, les tableaux Numpy de vos images ou les fichiers de flux de vos images, d≈Ωpendamment de type sp≈Ωcifie pour la valeur d√ïentr≈Ωe. 
 
 
-  -- *paramètre* **result_count_per_image** (optionnel) : Il fait référence au nombre de possible de prédictions renvoyées pour chaque image. Ce paramètre a pour valeur par défaut 2. 
+  -- *param¬ètre* **result_count_per_image** (optionnel) : Il fait r≈Ωf≈Ωrence au nombre de possible de pr≈Ωdictions renvoy≈Ωes pour chaque image. Ce param¬ètre a pour valeur par d≈Ωfaut 2. 
 
 
-  -- *paramètre* **input_type** (optionnel) : Il fait référence au format dans lequel vos images sont représentées dans la liste contenu dans le paramètre **sent_images_array**. Il est par défaut ‘file’ et accepte aussi ‘array’ et ‘stream’. 
+  -- *param¬ètre* **input_type** (optionnel) : Il fait r≈Ωf≈Ωrence au format dans lequel vos images sont repr≈Ωsent≈Ωes dans la liste contenu dans le param¬ètre **sent_images_array**. Il est par d≈Ωfaut √îfile√ï et accepte aussi √îarray√ï et √îstream√ï. 
 
 
-  -- *valeur retournée* **output_array** (une liste python) : La valeur retournée par la fonction **predictMultipleImages** est une liste qui contient des dictionnaires. Chaque dictionnaire correspond à une image contenue dans le tableau transmis a **sent_images_array**. Chaque dictionnaire a une propriété "prediction_results" qui est la liste de tous les résultats de prédictions sur l’image a cet indice ainsi que la ‘prediction_probabilities’ qui est la liste correspondant au pourcentage de probabilité de chaque résultat. 
+  -- *valeur retourn≈Ωe* **output_array** (une liste python) : La valeur retourn≈Ωe par la fonction **predictMultipleImages** est une liste qui contient des dictionnaires. Chaque dictionnaire correspond ÀÜ une image contenue dans le tableau transmis a **sent_images_array**. Chaque dictionnaire a une propri≈Ωt≈Ω "prediction_results" qui est la liste de tous les r≈Ωsultats de pr≈Ωdictions sur l√ïimage a cet indice ainsi que la √îprediction_probabilities√ï qui est la liste correspondant au pourcentage de probabilit≈Ω de chaque r≈Ωsultat. 
 
 
 **Exemple de code**
 
-Trouver ci-dessous un échantillon de code pour la prédiction sur une image :: 
+Trouver ci-dessous un ≈Ωchantillon de code pour la pr≈Ωdiction sur une image√ä:: 
 
     from imageai.Prediction import ImagePrediction
     import os
@@ -129,7 +129,7 @@ Trouver ci-dessous un échantillon de code pour la prédiction sur une image ::
     for eachPrediction, eachProbability in zip(predictions, probabilities):
         print(eachPrediction , " : " , eachProbability)
 
-Trouvez ci-dessous un échantillon de code pour la détection/prédiction sur plusieurs images ::
+Trouvez ci-dessous un ≈Ωchantillon de code pour la d≈Ωtection/pr≈Ωdiction sur plusieurs images√ä::
 
     from imageai.Prediction import ImagePrediction
     import os

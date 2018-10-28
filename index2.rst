@@ -1,4 +1,4 @@
-﻿.. ImageAI documentation master file, created by
+.. ImageAI documentation master file, created by
    sphinx-quickstart on Tue Jun 12 06:13:09 2018.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
@@ -8,7 +8,7 @@ Documentation officielle de ImageAI en Franais !
 **ImageAI** est une bibliothque python dŽveloppŽe pour permettre aux dŽveloppeurs, chercheurs, Žtudiants de construire des applications et des systmes qui intgrent lÕapprentissage profond et la vision assistŽe par ordinateur en utilisant simplement quelques lignes de code. 
 Cette documentation est fournie pour donner assez de dŽtails sur toutes classes et fonctions disponibles dans **ImageAI**, couples a un certain nombre dÕexemples de code. 
 
-**ImageAI** est un projet dŽveloppŽ par `Moses Olafenwa <https://moses.aicommons.science/>`_ et `John Olafenwa <https://john.aicommons.science/>`_, the `DeepQuest AI <https://www.deepquestai.com/>`_ team. 
+**ImageAI** est un projet dŽveloppŽ par `Moses Olafenwa <https://moses.specpal.science/>`_ et `John Olafenwa <https://john.specpal.science/>`_, the `AI Commons <https://commons.specpal.science/>`_ team. 
 
 
 Le dossier official GitHub de **ImageAI** est `https://github.com/OlafenwaMoses/ImageAI <https://github.com/OlafenwaMoses/ImageAI />`_

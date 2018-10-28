@@ -5,27 +5,27 @@
 
 Les Classes de detection
 =================
-**ImageAI** fournit un ensemble de classes et fonctions puissantes et faciles à utiliser pour la **Détection et Extraction d’objets dans une image**.
-**ImageAI** vous permet d’utiliser les algorithmes de pointe en apprentissage profond tel que **RetinaNet**, **YOLOv3** et **TinyYOLOv3**. Avec **ImageAI** vous pouvez accomplir des taches de détection et d’analyse d’images. 
-Trouvez ci-dessous les classes et leurs fonctions respectives mise à votre disposition pour votre utilisation. Ces classes peuvent être intégrées dans tout programme Python traditionnel que vous développez ; que ce soit un site internet, une application Windows/Linux/MacOS ou un système qui supporte ou fait partir d’un réseau local.   
+**ImageAI** fournit un ensemble de classes et fonctions puissantes et faciles ÀÜ utiliser pour la **D≈Ωtection et Extraction d√ïobjets dans une image**.
+**ImageAI** vous permet d√ïutiliser les algorithmes de pointe en apprentissage profond tel que **RetinaNet**, **YOLOv3** et **TinyYOLOv3**. Avec **ImageAI** vous pouvez accomplir des taches de d≈Ωtection et d√ïanalyse d√ïimages. 
+Trouvez ci-dessous les classes et leurs fonctions respectives mise ÀÜ votre disposition pour votre utilisation. Ces classes peuvent ¬être int≈Ωgr≈Ωes dans tout programme Python traditionnel que vous d≈Ωveloppez ; que ce soit un site internet, une application Windows/Linux/MacOS ou un syst¬ème qui supporte ou fait partir d√ïun r≈Ωseau local.   
 
 
 
 **======= imageai.Detection.ObjectDetection =======**
 
 
-Cette classe **ObjectDetection** vous fournit les fonctions pour accomplir la détection d’objets sur une image ou un ensemble d’images, utilisant les modèles **pré-entraines** sur la base de données **COCO**.  
-Les modèles supportés sont **RetinaNet**, **YOLOv3** et **TinyYOLOv3**.
-Ceci veut dire que vous pouvez détecter et reconnaitre 80 différents types communs d’objets de tous les jours. Pour commencer, télécharger n’importe quel modèle que vous voulez utiliser via les liens ci-dessous :  
+Cette classe **ObjectDetection** vous fournit les fonctions pour accomplir la d≈Ωtection d√ïobjets sur une image ou un ensemble d√ïimages, utilisant les mod¬èles **pr≈Ω-entraines** sur la base de donn≈Ωes **COCO**.  
+Les mod¬èles support≈Ωs sont **RetinaNet**, **YOLOv3** et **TinyYOLOv3**.
+Ceci veut dire que vous pouvez d≈Ωtecter et reconnaitre 80 diff≈Ωrents types communs d√ïobjets de tous les jours. Pour commencer, t≈Ωl≈Ωcharger n√ïimporte quel mod¬èle que vous voulez utiliser via les liens ci-dessous√ä:  
 
 
-`Télécharger le modèle RetinaNet - resnet50_coco_best_v2.0.1.h5 <https://github.com/OlafenwaMoses/ImageAI/releases/tag/1.0 />`_
+`T≈Ωl≈Ωcharger le mod¬èle RetinaNet - resnet50_coco_best_v2.0.1.h5 <https://github.com/OlafenwaMoses/ImageAI/releases/tag/1.0 />`_
 
-`Télécharger le modèle YOLOv3 - yolo.h5 <https://github.com/OlafenwaMoses/ImageAI/releases/tag/1.0 />`_
+`T≈Ωl≈Ωcharger le mod¬èle YOLOv3 - yolo.h5 <https://github.com/OlafenwaMoses/ImageAI/releases/tag/1.0 />`_
 
-`Télécharger le modèle TinyYOLOv3 - yolo-tiny.h5 <https://github.com/OlafenwaMoses/ImageAI/releases/tag/1.0 />`_
+`T≈Ωl≈Ωcharger le mod¬èle TinyYOLOv3 - yolo-tiny.h5 <https://github.com/OlafenwaMoses/ImageAI/releases/tag/1.0 />`_
 
-Une fois que vous avez télécharger le modèle de votre choix, vous devez créer une instance de la classe **ObjectDetection** comme dans l’exemple ci-dessous ::
+Une fois que vous avez t≈Ωl≈Ωcharger le mod¬èle de votre choix, vous devez cr≈Ωer une instance de la classe **ObjectDetection** comme dans l√ïexemple ci-dessous√ä::
 
 
 
@@ -33,84 +33,84 @@ Une fois que vous avez télécharger le modèle de votre choix, vous devez créer un
     
     detector = ObjectDetection()
 
-Une fois que vois vous avez créé une instance de la classe, vous pouvez utiliser les fonctions ci-dessous pour choisir convenablement les propriétés d’instance et de commencer la détection d’objets sur les images. 
+Une fois que vois vous avez cr≈Ω≈Ω une instance de la classe, vous pouvez utiliser les fonctions ci-dessous pour choisir convenablement les propri≈Ωt≈Ωs d√ïinstance et de commencer la d≈Ωtection d√ïobjets sur les images. 
 
 
-* **.setModelTypeAsRetinaNet()** , cette fonction établit comme type de modèle pour l’instance de détection d’objets que vous avez créé le modèle **RetinaNet**, ceci veut dire que vous accomplirez la tache de détection d’objets à l’aide de modèle pré-entrainé de **RetinaNet** que vous avez téléchargé par les liens ci-dessus. Trouvez un exemple de code ci-dessous :: 
+* **.setModelTypeAsRetinaNet()** , cette fonction ≈Ωtablit comme type de mod¬èle pour l√ïinstance de d≈Ωtection d√ïobjets que vous avez cr≈Ω≈Ω le mod¬èle **RetinaNet**, ceci veut dire que vous accomplirez la tache de d≈Ωtection d√ïobjets ÀÜ l√ïaide de mod¬èle pr≈Ω-entrain≈Ω de **RetinaNet** que vous avez t≈Ωl≈Ωcharg≈Ω par les liens ci-dessus. Trouvez un exemple de code ci-dessous√ä:: 
 
     detector.setModelTypeAsRetinaNet()
 
-* **.setModelTypeAsYOLOv3()** , cette fonction établit comme type de modèle pour l’instance de détection d’objets que vous avez créé le modèle **YOLOv3**, ceci veut dire que vous accomplirez la tache de détection d’objets à l’aide de modèle pré-entrainé de **YOLOv3** que vous avez téléchargé par les liens ci-dessus. Trouvez un exemple de code ci-dessous :: 
+* **.setModelTypeAsYOLOv3()** , cette fonction ≈Ωtablit comme type de mod¬èle pour l√ïinstance de d≈Ωtection d√ïobjets que vous avez cr≈Ω≈Ω le mod¬èle **YOLOv3**, ceci veut dire que vous accomplirez la tache de d≈Ωtection d√ïobjets ÀÜ l√ïaide de mod¬èle pr≈Ω-entrain≈Ω de **YOLOv3** que vous avez t≈Ωl≈Ωcharg≈Ω par les liens ci-dessus. Trouvez un exemple de code ci-dessous√ä:: 
 
     detector.setModelTypeAsYOLOv3()
 
-* **.setModelTypeAsTinyYOLOv3()** , cette fonction établit comme type de modèle pour l’instance de détection d’objets que vous avez créé le modèle **TinyYOLOv3**, ceci veut dire que vous accomplirez la tache de détection d’objets à l’aide de modèle pré-entrainé de **TinyYOLOv3** que vous avez téléchargé par les liens ci-dessus. Trouvez un exemple de code ci-dessous :: 
+* **.setModelTypeAsTinyYOLOv3()** , cette fonction ≈Ωtablit comme type de mod¬èle pour l√ïinstance de d≈Ωtection d√ïobjets que vous avez cr≈Ω≈Ω le mod¬èle **TinyYOLOv3**, ceci veut dire que vous accomplirez la tache de d≈Ωtection d√ïobjets ÀÜ l√ïaide de mod¬èle pr≈Ω-entrain≈Ω de **TinyYOLOv3** que vous avez t≈Ωl≈Ωcharg≈Ω par les liens ci-dessus. Trouvez un exemple de code ci-dessous√ä:: 
 
     detector.setModelTypeAsTinyYOLOv3()
 
 
-* **.setModelPath()** , Cette fonction prend en argument une chaine de caractères qui doit être le chemin vers le fichier modèle que vous avez téléchargé et doit correspondre au type de modèle choisi pour votre instance de détection d’objets. Trouvez un exemple de code et de paramètres de fonction ci-dessous : 
+* **.setModelPath()** , Cette fonction prend en argument une chaine de caract¬ères qui doit ¬être le chemin vers le fichier mod¬èle que vous avez t≈Ωl≈Ωcharg≈Ω et doit correspondre au type de mod¬èle choisi pour votre instance de d≈Ωtection d√ïobjets. Trouvez un exemple de code et de param¬ètres de fonction ci-dessous : 
 
     detector.setModelPath("yolo.h5")
 
- -- *paramètre* **model_path** (requis) : c’est le chemin vers votre modèle téléchargé. 
+ -- *param¬ètre* **model_path** (requis) : c√ïest le chemin vers votre mod¬èle t≈Ωl≈Ωcharg≈Ω. 
 
-* **.loadModel()** ,  Cette fonction charge le modèle à partir du chemin que vous avez spécifié dans l’appel de fonction ci-dessus de votre instance de détection d’objets. Trouver un exemple de code ci-dessous ::
+* **.loadModel()** ,  Cette fonction charge le mod¬èle ÀÜ partir du chemin que vous avez sp≈Ωcifi≈Ω dans l√ïappel de fonction ci-dessus de votre instance de d≈Ωtection d√ïobjets. Trouver un exemple de code ci-dessous√ä::
 
     detector.loadModel()
 
- -- *paramètre* **detection_speed** (optionnel) : Ce paramètre vous permet de réduire jusqu’à 80% le temps qu’il faut pour détecter les objets sur une image ce qui conduit à une légère réduction de la précision. Ce paramètre accepte des valeurs de type chaines de caractères. Les valeurs disponibles sont **normal**, **fast**, **faster**, **fastest** et **flash**. La valeur par défaut est **normal**
+ -- *param¬ètre* **detection_speed** (optionnel) : Ce param¬ètre vous permet de r≈Ωduire jusqu√ïÀÜ 80% le temps qu√ïil faut pour d≈Ωtecter les objets sur une image ce qui conduit ÀÜ une l≈Ωg¬ère r≈Ωduction de la pr≈Ωcision. Ce param¬ètre accepte des valeurs de type chaines de caract¬ères. Les valeurs disponibles sont **normal**, **fast**, **faster**, **fastest** et **flash**. La valeur par d≈Ωfaut est **normal**
 
 
-* **.detectObjectsFromImage()** ,C’est la fonction qui accomplit la détection d’objets après que le modèle ait été chargé. Elle peut être appelée plusieurs fois pour détecter les objets dans plusieurs images. Trouvez un exemple de code ci-dessous ::
+* **.detectObjectsFromImage()** ,C√ïest la fonction qui accomplit la d≈Ωtection d√ïobjets apr¬ès que le mod¬èle ait ≈Ωt≈Ω charg≈Ω. Elle peut ¬être appel≈Ωe plusieurs fois pour d≈Ωtecter les objets dans plusieurs images. Trouvez un exemple de code ci-dessous√ä::
 
  
     detections = detector.detectObjectsFromImage(input_image="image.jpg", output_image_path="imagenew.jpg", minimum_percentage_probability=30)
 
- -- *paramètre* **input_image** (requis) : Il fait référence au chemin vers le fichier image sur lequel vous voulez faire la détection. Ce paramètre peut être le tableau **Numpy** ou le fichier flux de l’image si vous donner la valeur "array" ou "stream" au paramètre **input_type**.
+ -- *param¬ètre* **input_image** (requis) : Il fait r≈Ωf≈Ωrence au chemin vers le fichier image sur lequel vous voulez faire la d≈Ωtection. Ce param¬ètre peut ¬être le tableau **Numpy** ou le fichier flux de l√ïimage si vous donner la valeur "array" ou "stream" au param¬ètre **input_type**.
 
 
- -- *paramètre* **output_image_path** (requis seulement si **input_type** = "file" ) : Il fait référence au chemin vers le lieu de sauvegarde de l’image détectée ou détection. Il n’est requis que si **input_type** = "file".
+ -- *param¬ètre* **output_image_path** (requis seulement si **input_type** = "file" ) : Il fait r≈Ωf≈Ωrence au chemin vers le lieu de sauvegarde de l√ïimage d≈Ωtect≈Ωe ou d≈Ωtection. Il n√ïest requis que si **input_type** = "file".
 
 
 
- -- *paramètre* **minimum_percentage_probability** (optionnel) : Ce paramètre est utilisé pour déterminer l’intégrité des résultats de détections. Réduire cette valeur permettra de détecter plus d’objets alors que l’augmenter permet d’avoir des objets détectés avec la plus grande précision. La valeur par défaut est 50. 
+ -- *param¬ètre* **minimum_percentage_probability** (optionnel) : Ce param¬ètre est utilis≈Ω pour d≈Ωterminer l√ïint≈Ωgrit≈Ω des r≈Ωsultats de d≈Ωtections. R≈Ωduire cette valeur permettra de d≈Ωtecter plus d√ïobjets alors que l√ïaugmenter permet d√ïavoir des objets d≈Ωtect≈Ωs avec la plus grande pr≈Ωcision. La valeur par d≈Ωfaut est 50. 
 
 
- -- *paramètre* **output_type** (optionnel) : ce paramètre permet de définir le format dans lequel l’image de détections sera produit. Les valeurs disponibles sont ‘file’(fichier) et ‘array’(tableau). La valeur par défaut est ‘file’.  Si ce paramètre est définit comme ‘array’, la fonction va renvoyer un tableau Numpy pour l’image de détection. Retrouvez un exemple ci-dessous ::  
+ -- *param¬ètre* **output_type** (optionnel) : ce param¬ètre permet de d≈Ωfinir le format dans lequel l√ïimage de d≈Ωtections sera produit. Les valeurs disponibles sont √îfile√ï(fichier) et √îarray√ï(tableau). La valeur par d≈Ωfaut est √îfile√ï.  Si ce param¬ètre est d≈Ωfinit comme √îarray√ï, la fonction va renvoyer un tableau Numpy pour l√ïimage de d≈Ωtection. Retrouvez un exemple ci-dessous√ä::  
 
 
      returned_image, detections = detector.detectObjectsFromImage(input_image="image.jpg", output_type="array", minimum_percentage_probability=30)
 
- -- *paramètre* **display_percentage_probability** (optionnel) : Ce paramètre peut être utilisé pour cacher le pourcentage de probabilité de chaque objet détecté dans l’image de détectée si sa valeur est définie à ‘False’. La valeur par défaut est ‘True’. 
+ -- *param¬ètre* **display_percentage_probability** (optionnel) : Ce param¬ètre peut ¬être utilis≈Ω pour cacher le pourcentage de probabilit≈Ω de chaque objet d≈Ωtect≈Ω dans l√ïimage de d≈Ωtect≈Ωe si sa valeur est d≈Ωfinie ÀÜ √îFalse√ï. La valeur par d≈Ωfaut est √îTrue√ï. 
 
- -- *paramètre* **display_object_name** (optionnel) : Ce paramètre peut être utilisé pour cacher le nom de chaque objet détecté dans l’image de détection si sa valeur est définie comme ‘False’. La valeur par défaut est ‘True’.
+ -- *param¬ètre* **display_object_name** (optionnel) : Ce param¬ètre peut ¬être utilis≈Ω pour cacher le nom de chaque objet d≈Ωtect≈Ω dans l√ïimage de d≈Ωtection si sa valeur est d≈Ωfinie comme √îFalse√ï. La valeur par d≈Ωfaut est √îTrue√ï.
 
 
- -- *paramètre* **extract_detected_objects** (optionnel) : ce paramètre peut être utilisé pour extraire et sauvegarder/ retourner chaque objet détecté dans une image dans une image séparée. Sa valeur par défaut est ‘False’. 
+ -- *param¬ètre* **extract_detected_objects** (optionnel) : ce param¬ètre peut ¬être utilis≈Ω pour extraire et sauvegarder/ retourner chaque objet d≈Ωtect≈Ω dans une image dans une image s≈Ωpar≈Ωe. Sa valeur par d≈Ωfaut est √îFalse√ï. 
 
- -- *valeurs renvoyées* : Les valeurs renvoyées vont dépendre des paramètres envoyés dans la fonction **detectObjectsFromImage()**. Retrouvez les commentaires et le code ci-dessous :
+ -- *valeurs renvoy≈Ωes* : Les valeurs renvoy≈Ωes vont d≈Ωpendre des param¬ètres envoy≈Ωs dans la fonction **detectObjectsFromImage()**. Retrouvez les commentaires et le code ci-dessous√ä:
 
                 
         """
             
-Si tous les paramètres nécessaires sont définis et 'output_image_path' est défini vers le chemin où le fichier de détection sera sauvegardé, la fonction va renvoyer :
-1. un tableau de dictionnaires, avec chaque dictionnaire correspondant aux objets détectés dans l’image. Chaque dictionnaire a les propriétés suivantes :
-       *Nom (chaine de caractères -- string)
+Si tous les param¬ètres n≈Ωcessaires sont d≈Ωfinis et 'output_image_path' est d≈Ωfini vers le chemin o¬ù le fichier de d≈Ωtection sera sauvegard≈Ω, la fonction va renvoyer√ä:
+1. un tableau de dictionnaires, avec chaque dictionnaire correspondant aux objets d≈Ωtect≈Ωs dans l√ïimage. Chaque dictionnaire a les propri≈Ωt≈Ωs suivantes√ä:
+       *Nom (chaine de caract¬ères -- string)
             	 * percentage_probability (float)
-	         	 * box_points (tuple de coordonnées x1,y1,x2 et y2)
+	         	 * box_points (tuple de coordonn≈Ωes x1,y1,x2 et y2)
 
                    """
         detections = detector.detectObjectsFromImage(input_image="image.jpg", output_image_path="imagenew.jpg", minimum_percentage_probability=30)
 
 
         """
-Si tous les paramètres requis sont définis et output_type = 'array', la fonction va renvoyer
-1. Un tableau Numpy de l’image de détection.
-2. Un tableau de dictionnaires, avec chaque dictionnaire correspondant aux objets détectés dans l’image. Chaque dictionnaire contient les propriétés suivantes :
-* Nom (string – chaine de caractères)
+Si tous les param¬ètres requis sont d≈Ωfinis et output_type = 'array', la fonction va renvoyer
+1. Un tableau Numpy de l√ïimage de d≈Ωtection.
+2. Un tableau de dictionnaires, avec chaque dictionnaire correspondant aux objets d≈Ωtect≈Ωs dans l√ïimage. Chaque dictionnaire contient les propri≈Ωt≈Ωs suivantes√ä:
+* Nom (string √ê chaine de caract¬ères)
 * percentage_probability (float)
-* box_points (tuple de coordonnées x1,y1,x2 et y2)
+* box_points (tuple de coordonn≈Ωes x1,y1,x2 et y2)
 
         """
         returned_image, detections = detector.detectObjectsFromImage(input_image="image.jpg", output_type="array", minimum_percentage_probability=30)
@@ -118,54 +118,54 @@ Si tous les paramètres requis sont définis et output_type = 'array', la fonction
 
         """
 	 
-            Si extract_detected_objects = True et 'output_image_path' est défini par le chemin vers le lieu de sauvegarde de l’image de détection, la fonction renvoie :
-1. Un tableau de dictionnaires, chaque dictionnaire correspond aux objets détectés dans l’image. Chaque dictionnaire contient les propriétés suivantes :
+            Si extract_detected_objects = True et 'output_image_path' est d≈Ωfini par le chemin vers le lieu de sauvegarde de l√ïimage de d≈Ωtection, la fonction renvoie√ä:
+1. Un tableau de dictionnaires, chaque dictionnaire correspond aux objets d≈Ωtect≈Ωs dans l√ïimage. Chaque dictionnaire contient les propri≈Ωt≈Ωs suivantes√ä:
 * Nom (string)
 * percentage_probability (float)
-* box_points (tuple de coordonnées x1,y1,x2 et y2)
-2. Un tableau de chaine de caractères représentant les chemins des images de chaque objet extrait de l’image de départ. 
+* box_points (tuple de coordonn≈Ωes x1,y1,x2 et y2)
+2. Un tableau de chaine de caract¬ères repr≈Ωsentant les chemins des images de chaque objet extrait de l√ïimage de d≈Ωpart. 
 
         """
         detections, extracted_objects = detector.detectObjectsFromImage(input_image="image.jpg", output_image_path="imagenew.jpg", extract_detected_objects=True, minimum_percentage_probability=30)
 
 
         """
-            Si extract_detected_objects = True et output_type = 'array', la fonction va renvoyer :
-1. Un tableau Numpy de l’image de détection.
-2. Un tableau de dictionnaires, avec chaque dictionnaire correspondant aux objets détectés dans l’image. Chaque dictionnaire contient les propriétés suivantes :
+            Si extract_detected_objects = True et output_type = 'array', la fonction va renvoyer√ä:
+1. Un tableau Numpy de l√ïimage de d≈Ωtection.
+2. Un tableau de dictionnaires, avec chaque dictionnaire correspondant aux objets d≈Ωtect≈Ωs dans l√ïimage. Chaque dictionnaire contient les propri≈Ωt≈Ωs suivantes√ä:
 * nom(string)
 * percentage_probability (float)
-* box_points (tuple de coordonnées x1,y1,x2 et y2)
-	3. Un tableau de tableaux Numpy de chaque objet détecté dans l’image   
+* box_points (tuple de coordonn≈Ωes x1,y1,x2 et y2)
+	3. Un tableau de tableaux Numpy de chaque objet d≈Ωtect≈Ω dans l√ïimage   
         """
         returned_image, detections, extracted_objects = detector.detectObjectsFromImage(input_image="image.jpg", output_type="array", extract_detected_objects=True, minimum_percentage_probability=30)
 
 
 
-* **.CustomObjects()** ,C’est la fonction que vous utiliserez lorsque vous ne voulez faire la détection que d’un nombre limité d’objets. Elle renvoie un dictionnaire d’objets et leur valeur ‘True’ ou ‘False’. Pour détecter les objets sélectionnés dans une image, vous devrez utiliser les dictionnaires renvoyés par cette fonction avec la fonction ** detectCustomObjectsFromImage()** . Retrouvez les détails dans les commentaires et le code ci-dessous ::
+* **.CustomObjects()** ,C√ïest la fonction que vous utiliserez lorsque vous ne voulez faire la d≈Ωtection que d√ïun nombre limit≈Ω d√ïobjets. Elle renvoie un dictionnaire d√ïobjets et leur valeur √îTrue√ï ou √îFalse√ï. Pour d≈Ωtecter les objets s≈Ωlectionn≈Ωs dans une image, vous devrez utiliser les dictionnaires renvoy≈Ωs par cette fonction avec la fonction ** detectCustomObjectsFromImage()** . Retrouvez les d≈Ωtails dans les commentaires et le code ci-dessous√ä::
 
         
         """
-Il y’a 80 possible objets que vous pouvez détecter avec la classe ObjectDetection, vous pouvez les voir ci-dessous. 
+Il y√ïa 80 possible objets que vous pouvez d≈Ωtecter avec la classe ObjectDetection, vous pouvez les voir ci-dessous. 
 
-            Person(personne),   bicycle(vélo),   car(voiture),   motorcycle(moto),   airplane(avion),
-            Bus(bus),   train(train),   truck(camion),   boat(bateau),   traffic light(feu de signalisation),   fire hydrant (bouche d’incendie),   stop_sign (panneau stop),
-            parking meter (parc mètre),   bench (banc),   bird (oiseau),   cat (chat),   dog (chien),   horse (cheval),   sheep (brebis),   cow (vache),   elephant (elephant),   bear (ours),   zebra (zebre),
-            giraffe (girafe),   backpack (sac à dos),   umbrella (parapluie),   handbag (sac à main),   tie (cravate),   suitcase (valise),   frisbee (frisbee),   skis (skis),   snowboard (snowboard),
+            Person(personne),   bicycle(v≈Ωlo),   car(voiture),   motorcycle(moto),   airplane(avion),
+            Bus(bus),   train(train),   truck(camion),   boat(bateau),   traffic light(feu de signalisation),   fire hydrant (bouche d√ïincendie),   stop_sign (panneau stop),
+            parking meter (parc m¬ètre),   bench (banc),   bird (oiseau),   cat (chat),   dog (chien),   horse (cheval),   sheep (brebis),   cow (vache),   elephant (elephant),   bear (ours),   zebra (zebre),
+            giraffe (girafe),   backpack (sac ÀÜ dos),   umbrella (parapluie),   handbag (sac ÀÜ main),   tie (cravate),   suitcase (valise),   frisbee (frisbee),   skis (skis),   snowboard (snowboard),
             sports ball(balle de sport),   kite (cerf - volant),   baseball bat (batte de baseball),   baseball glove (gang de baseball),   skateboard (skateboard),   surfboard  (planche de surf),   tennis racket (raquette de tennis),
-            bottle (bouteille),   wine glass (verre de vin),   cup (gobelet),   fork (fourchette),   knife (couteau),   spoon (cuillère),   bowl (bolle),   banana (banane),   apple (pomme),   sandwich (sandwich),   orange (orange),
-            broccoli (brocoli),   carrot (carotte),   hot dog (hot dog),   pizza (pizza),   donut (beignet),   cake(gâteau),   chair (chaise),   couch(canape),   potted plant(plante a pot),   bed(lit),
-            dining table(table de diner),   toilet(toilette),   tv(télévision),   laptop(ordinateur),   mouse(souris),   remote(télécommande),   keyboard(clavier),   cell phone(téléphone portable),   microwave(micro-onde),
-            oven  (four),   toaster(grille pain),   sink(évier),   refrigerator (réfrigérateur),   book (cahier),   clock (horloge),   vase(vase) ,   scissors(ciseaux),   teddy bear(ours en peluche),   hair dryer(sèche cheveux),
-            toothbrush(brosse à dent).
+            bottle (bouteille),   wine glass (verre de vin),   cup (gobelet),   fork (fourchette),   knife (couteau),   spoon (cuill¬ère),   bowl (bolle),   banana (banane),   apple (pomme),   sandwich (sandwich),   orange (orange),
+            broccoli (brocoli),   carrot (carotte),   hot dog (hot dog),   pizza (pizza),   donut (beignet),   cake(g‚Ä∞teau),   chair (chaise),   couch(canape),   potted plant(plante a pot),   bed(lit),
+            dining table(table de diner),   toilet(toilette),   tv(t≈Ωl≈Ωvision),   laptop(ordinateur),   mouse(souris),   remote(t≈Ωl≈Ωcommande),   keyboard(clavier),   cell phone(t≈Ωl≈Ωphone portable),   microwave(micro-onde),
+            oven  (four),   toaster(grille pain),   sink(≈Ωvier),   refrigerator (r≈Ωfrig≈Ωrateur),   book (cahier),   clock (horloge),   vase(vase) ,   scissors(ciseaux),   teddy bear(ours en peluche),   hair dryer(s¬èche cheveux),
+            toothbrush(brosse ÀÜ dent).
 
-Pour détecter uniquement certains des objets ci-dessus, vous devrez instancier la fonction CustomObjects et définir le ou les noms des objets que vous voulez détecter. Le reste sera défini à ‘False’ par défaut. Dans l’exemple ci-dessous, nous détectons uniquement ‘person’(personne) et ‘dog’(chien). 
+Pour d≈Ωtecter uniquement certains des objets ci-dessus, vous devrez instancier la fonction CustomObjects et d≈Ωfinir le ou les noms des objets que vous voulez d≈Ωtecter. Le reste sera d≈Ωfini ÀÜ √îFalse√ï par d≈Ωfaut. Dans l√ïexemple ci-dessous, nous d≈Ωtectons uniquement √îperson√ï(personne) et √îdog√ï(chien). 
      
         """
         custom = detector.CustomObjects(person=True, dog=True)
 
 
-* **.detectCustomObjectsFromImage()**, Cette fonction a tous les paramètres et renvoie toutes les valeurs de la fonction ** detectObjectsFromImage()**, avec une petite différence. Cette fonction ne fait la détection sur une image que d’objets sélectionnés. Contrairement à la fonction ** detectObjectsFromImage()**, elle a besoin d’un paramètre supplémentaire qui est **custom_objet** qui lui récupère le dictionnaire renvoyé par la fonction ** CustomObjects()**. Dans l’exemple ci-dessous, nous avons défini la fonction de détection pour qu’elle ne reconnaisse que les personnes et les chiens :: 
+* **.detectCustomObjectsFromImage()**, Cette fonction a tous les param¬ètres et renvoie toutes les valeurs de la fonction ** detectObjectsFromImage()**, avec une petite diff≈Ωrence. Cette fonction ne fait la d≈Ωtection sur une image que d√ïobjets s≈Ωlectionn≈Ωs. Contrairement ÀÜ la fonction ** detectObjectsFromImage()**, elle a besoin d√ïun param¬ètre suppl≈Ωmentaire qui est **custom_objet** qui lui r≈Ωcup¬ère le dictionnaire renvoy≈Ω par la fonction ** CustomObjects()**. Dans l√ïexemple ci-dessous, nous avons d≈Ωfini la fonction de d≈Ωtection pour qu√ïelle ne reconnaisse que√äles personnes et les chiens√ä:: 
 
     
     custom = detector.CustomObjects(person=True, dog=True)
@@ -174,9 +174,9 @@ Pour détecter uniquement certains des objets ci-dessus, vous devrez instancier l
 
         
 
-** Exemple de code pour la détection d’objets sur Image **
+** Exemple de code pour la d≈Ωtection d√ïobjets sur Image **
 
-Trouvez ci-dessous un exemple de code pour détecter les objets sur une image :: 
+Trouvez ci-dessous un exemple de code pour d≈Ωtecter les objets sur une image√ä:: 
 
     from imageai.Detection import ObjectDetection
     import os

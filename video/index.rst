@@ -3,66 +3,66 @@ a.. ImageAI documentation master file, created by
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Analyse et détection sur Vidéo et flux vidéo temp réel Vidéo 
+Analyse et dÃ©tection sur VidÃ©o et flux vidÃ©o temp rÃ©el VidÃ©o 
 ==========================================
-**ImageAI** fournit un ensemble de classes et de fonctions puissantes et facile à utiliser pour faire de la **Détection et du tracking d’objets dans une Vidéo** et L’**analyse vidéo**. **ImageAI** vous permet d’utiliser ou d’employer tous les algorithmes de pointes d’apprentissage profond tel que **RetinaNet**, **YOLOv3** et **TinyYOLOv3**.
-Avec **ImageAI** vous pouvez effectuer des taches de détection et analyser des vidéos et des flux vidéo temps réel à partir des cameras IP et de celle de vos appareils. 
-Trouvez ci-dessous les différentes classes et les fonctions respectives mise à votre disposition pour votre utilisation. 
-Ces classes peuvent être intégré à tout programme python traditionnel que vous développez, que cela soit un site internet, une application Windows/Linux/MacOS ou un système qui supporte ou fait partie d’un réseau local. 
+**ImageAI** fournit un ensemble de classes et de fonctions puissantes et facile Ã  utiliser pour faire de la **DÃ©tection et du tracking dâ€™objets dans une VidÃ©o** et Lâ€™**analyse vidÃ©o**. **ImageAI** vous permet dâ€™utiliser ou dâ€™employer tous les algorithmes de pointes dâ€™apprentissage profond tel que **RetinaNet**, **YOLOv3** et **TinyYOLOv3**.
+Avec **ImageAI** vous pouvez effectuer des taches de dÃ©tection et analyser des vidÃ©os et des flux vidÃ©o temps rÃ©el Ã  partir des cameras IP et de celle de vos appareils. 
+Trouvez ci-dessous les diffÃ©rentes classes et les fonctions respectives mise Ã  votre disposition pour votre utilisation. 
+Ces classes peuvent Ãªtre intÃ©grÃ© Ã  tout programme python traditionnel que vous dÃ©veloppez, que cela soit un site internet, une application Windows/Linux/MacOS ou un systÃ¨me qui supporte ou fait partie dâ€™un rÃ©seau local. 
 
 
 **======= imageai.Detection.VideoObjectDetection =======**
 
 
-La classe **VideoObjectDetection** vous fournit des fonctions pour détecter les objets dans une vidéo ou un flux vidéo provenant d’une caméra ou d’une caméra IP en utilisant les modèles **pré-entrainé** à partir de la base de données **COCO**. Les modèles supportes sont **RetinaNet**, **YOLOv3** et **TinyYOLOv3**. Ceci veut dire que vous pouvez détecter et reconnaitre 80 différents types d’objets de la vie de tous les jours dans les vidéos. 
-Pour commencer, télécharger un des modèles pré-entrainé que vous voulez utiliser via les liens ci-dessous. 
+La classe **VideoObjectDetection** vous fournit des fonctions pour dÃ©tecter les objets dans une vidÃ©o ou un flux vidÃ©o provenant dâ€™une camÃ©ra ou dâ€™une camÃ©ra IP en utilisant les modÃ¨les **prÃ©-entrainÃ©** Ã  partir de la base de donnÃ©es **COCO**. Les modÃ¨les supportes sont **RetinaNet**, **YOLOv3** et **TinyYOLOv3**. Ceci veut dire que vous pouvez dÃ©tecter et reconnaitre 80 diffÃ©rents types dâ€™objets de la vie de tous les jours dans les vidÃ©os. 
+Pour commencer, tÃ©lÃ©charger un des modÃ¨les prÃ©-entrainÃ© que vous voulez utiliser via les liens ci-dessous. 
 
-`Télécharger le modèle RetinaNet - resnet50_coco_best_v2.0.1.h5 <https://github.com/OlafenwaMoses/ImageAI/releases/tag/1.0 />`_
+`TÃ©lÃ©charger le modÃ¨le RetinaNet - resnet50_coco_best_v2.0.1.h5 <https://github.com/OlafenwaMoses/ImageAI/releases/tag/1.0 />`_
 
-` Télécharger le modèle YOLOv3 - yolo.h5 <https://github.com/OlafenwaMoses/ImageAI/releases/tag/1.0 />`_
+` TÃ©lÃ©charger le modÃ¨le YOLOv3 - yolo.h5 <https://github.com/OlafenwaMoses/ImageAI/releases/tag/1.0 />`_
 
-` Télécharger le modèle TinyYOLOv3 -  yolo-tiny.h5 <https://github.com/OlafenwaMoses/ImageAI/releases/tag/1.0 />`_
+` TÃ©lÃ©charger le modÃ¨le TinyYOLOv3 -  yolo-tiny.h5 <https://github.com/OlafenwaMoses/ImageAI/releases/tag/1.0 />`_
 
-Une fois que vous avez téléchargé le modèle que vous choisissez d’utiliser, créez une instance de **VideoObjectDetection** comme vous pouvez le voir ci-dessous ::
+Une fois que vous avez tÃ©lÃ©chargÃ© le modÃ¨le que vous choisissez dâ€™utiliser, crÃ©ez une instance de **VideoObjectDetection** comme vous pouvez le voir ci-dessousÂ ::
 
     
     from imageai.Detection import VideoObjectDetection
     
     detector = VideoObjectDetection()
-Une fois que vous avez créé une instance de la classe, vous pouvez appeler les fonctions ci-dessous pour paramétrer ses propriétés et détecter les objets dans une vidéo. 
+Une fois que vous avez crÃ©Ã© une instance de la classe, vous pouvez appeler les fonctions ci-dessous pour paramÃ©trer ses propriÃ©tÃ©s et dÃ©tecter les objets dans une vidÃ©o. 
 
-* **.setModelTypeAsRetinaNet()** , cette fonction établit comme type de modèle pour l’instance de détection d’objets que vous avez créé le modèle
-**RetinaNet**, ce qui veut dire que vous accomplirez votre tâche de détection d’objets en utilisant le modèle pré-entrainé **RetinaNet** que vous avez précédemment téléchargé par le lien ci-dessus. Trouvez ci-dessous un exemple de code ::  
+* **.setModelTypeAsRetinaNet()** , cette fonction Ã©tablit comme type de modÃ¨le pour lâ€™instance de dÃ©tection dâ€™objets que vous avez crÃ©Ã© le modÃ¨le
+**RetinaNet**, ce qui veut dire que vous accomplirez votre tÃ¢che de dÃ©tection dâ€™objets en utilisant le modÃ¨le prÃ©-entrainÃ© **RetinaNet** que vous avez prÃ©cÃ©demment tÃ©lÃ©chargÃ© par le lien ci-dessus. Trouvez ci-dessous un exemple de codeÂ ::  
 
 
     detector.setModelTypeAsRetinaNet()
 
-* **.setModelTypeAsYOLOv3()** , cette fonction établit comme type de modèle pour l’instance de détection d’objets que vous avez créé le modèle
-**YOLOv3**, ce qui veut dire que vous accomplirez votre tâche de détection d’objets en utilisant le modèle pré-entrainé **YOLOv3** que vous avez précédemment téléchargé par le lien ci-dessus. Trouvez ci-dessous un exemple de code ::  
+* **.setModelTypeAsYOLOv3()** , cette fonction Ã©tablit comme type de modÃ¨le pour lâ€™instance de dÃ©tection dâ€™objets que vous avez crÃ©Ã© le modÃ¨le
+**YOLOv3**, ce qui veut dire que vous accomplirez votre tÃ¢che de dÃ©tection dâ€™objets en utilisant le modÃ¨le prÃ©-entrainÃ© **YOLOv3** que vous avez prÃ©cÃ©demment tÃ©lÃ©chargÃ© par le lien ci-dessus. Trouvez ci-dessous un exemple de codeÂ ::  
 
 
     detector.setModelTypeAsYOLOv3()
 
-* **.setModelTypeAsTinyYOLOv3()** , cette fonction établit comme type de modèle pour l’instance de détection d’objets que vous avez créé le modèle
-**TinyYOLOv3**, ce qui veut dire que vous accomplirez votre tâche de détection d’objets en utilisant le modèle pré-entrainé **TinyYOLOv3** que vous avez précédemment téléchargé par le lien ci-dessus. Trouvez ci-dessous un exemple de code ::  
+* **.setModelTypeAsTinyYOLOv3()** , cette fonction Ã©tablit comme type de modÃ¨le pour lâ€™instance de dÃ©tection dâ€™objets que vous avez crÃ©Ã© le modÃ¨le
+**TinyYOLOv3**, ce qui veut dire que vous accomplirez votre tÃ¢che de dÃ©tection dâ€™objets en utilisant le modÃ¨le prÃ©-entrainÃ© **TinyYOLOv3** que vous avez prÃ©cÃ©demment tÃ©lÃ©chargÃ© par le lien ci-dessus. Trouvez ci-dessous un exemple de codeÂ ::  
 
     detector.setModelTypeAsTinyYOLOv3()
 
 
-* **.setModelPath()** , cette fonction accepte une chaine de caractère qui doit être le chemin vers le fichier modèle que vous avez téléchargé et doit correspondre au type de modèle choisi pour votre instance de détection d’objets. Trouver un exemple de code et de paramètres de la fonction ci-dessous ::  
+* **.setModelPath()** , cette fonction accepte une chaine de caractÃ¨re qui doit Ãªtre le chemin vers le fichier modÃ¨le que vous avez tÃ©lÃ©chargÃ© et doit correspondre au type de modÃ¨le choisi pour votre instance de dÃ©tection dâ€™objets. Trouver un exemple de code et de paramÃ¨tres de la fonction ci-dessousÂ ::  
 
     detector.setModelPath("yolo.h5")
 
- -- *paramètre* **model_path** (requis) : C’est le chemin vers le fichier modèle téléchargé.  
+ -- *paramÃ¨tre* **model_path** (requis) : Câ€™est le chemin vers le fichier modÃ¨le tÃ©lÃ©chargÃ©.  
 
-* **.loadModel()** , Cette fonction charge le modèle à partir du chemin que vous avez spécifié dans l’appel ci-dessus de fonction de votre instance de détection d’objets. Trouver un exemple de code ci-dessous ::
+* **.loadModel()** , Cette fonction charge le modÃ¨le Ã  partir du chemin que vous avez spÃ©cifiÃ© dans lâ€™appel ci-dessus de fonction de votre instance de dÃ©tection dâ€™objets. Trouver un exemple de code ci-dessousÂ ::
 
     detector.loadModel()
 
- -- *paramètre* **detection_speed** (optionnel) : Ce paramètre vous permet de réduire de 80% le temps qu’il faut pour détecter les objets sur une vidéo, ce qui conduira à une légère baisse de la précision. Ce paramètre accepte des valeurs de type chaine de caractères. Les valeurs disponibles sont "normal", "fast", "faster", "fastest" et "flash". La valeur par défaut est ‘normal’. 
+ -- *paramÃ¨tre* **detection_speed** (optionnel) : Ce paramÃ¨tre vous permet de rÃ©duire de 80% le temps quâ€™il faut pour dÃ©tecter les objets sur une vidÃ©o, ce qui conduira Ã  une lÃ©gÃ¨re baisse de la prÃ©cision. Ce paramÃ¨tre accepte des valeurs de type chaine de caractÃ¨res. Les valeurs disponibles sont "normal", "fast", "faster", "fastest" et "flash". La valeur par dÃ©faut estÂ â€˜normalâ€™. 
 
 
-* **.detectObjectsFromVideo()** , Il s’agit de la fonction qui accomplit la détection d’objets sur un fichier vidéo ou un flux vidéo direct après que le modèle ait été chargé dans l’instance que vous avez créé. Retrouvez ci-après un exemple de code complet ::
+* **.detectObjectsFromVideo()** , Il sâ€™agit de la fonction qui accomplit la dÃ©tection dâ€™objets sur un fichier vidÃ©o ou un flux vidÃ©o direct aprÃ¨s que le modÃ¨le ait Ã©tÃ© chargÃ© dans lâ€™instance que vous avez crÃ©Ã©. Retrouvez ci-aprÃ¨s un exemple de code completÂ ::
 
 
     from imageai.Detection import VideoObjectDetection
@@ -82,26 +82,26 @@ Une fois que vous avez créé une instance de la classe, vous pouvez appeler les f
 
 
 
- -- *parametre* **input_file_path** (requis si vous ne tenez pas compte de **camera_input**) : Il fait référence au chemin vers le fichier vidéo sur lequel vous voulez faire la détection.
+ -- *parametre* **input_file_path** (requis si vous ne tenez pas compte de **camera_input**) : Il fait rÃ©fÃ©rence au chemin vers le fichier vidÃ©o sur lequel vous voulez faire la dÃ©tection.
 
- -- *paramètre* **output_file_path** (requis si **save_detected_video** n’a pas la valeur False) : Il fait référence vers l’emplacement de l’enregistrement du fichier vidéo détecté. Par défaut, cette fonction enregistre les vidéos dans le format  **.avi**. 
-
-
- -- *paramètre* **frames_per_second** (optionnel, mais recommandé) : 
-Ce paramètre vous permet de définir le nombre de frames par seconde pour la vidéo détectée qui sera enregistrée. Sa valeur par défaut est 20 mais nous recommandons que vous définissiez la valeur qui sied pour votre vidéo ou vidéo-direct.  
+ -- *paramÃ¨tre* **output_file_path** (requis si **save_detected_video** nâ€™a pas la valeur False) : Il fait rÃ©fÃ©rence vers lâ€™emplacement de lâ€™enregistrement du fichier vidÃ©o dÃ©tectÃ©. Par dÃ©faut, cette fonction enregistre les vidÃ©os dans le format  **.avi**. 
 
 
- -- *paramètre* **log_progress** (optionnel) : Définir ce paramètre a ‘True’ affiche le progrès de la vidéo ou flux direct pendant qu’il est détecter dans la console. Il fera un rapport sur chaque frame détecté pendant qu’il progresse. La valeur par défaut est ‘False’
+ -- *paramÃ¨tre* **frames_per_second** (optionnel, mais recommandÃ©) : 
+Ce paramÃ¨tre vous permet de dÃ©finir le nombre de frames par seconde pour la vidÃ©o dÃ©tectÃ©e qui sera enregistrÃ©e. Sa valeur par dÃ©faut est 20 mais nous recommandons que vous dÃ©finissiez la valeur qui sied pour votre vidÃ©o ou vidÃ©o-direct.  
 
- -- *paramètre* **return_detected_frame** (optionnel) : 
-Ce paramètre vous permet de retourner le frame détecté comme tableau Numpy pour chaque frame, seconde et minute de la vidéo détectée. Le tableau Numpy retourné sera envoyé respectivement a **per_frame_function**, **per_second_function** et **per_minute_function** (détails ci-dessous)
+
+ -- *paramÃ¨tre* **log_progress** (optionnel) : DÃ©finir ce paramÃ¨tre a â€˜Trueâ€™ affiche le progrÃ¨s de la vidÃ©o ou flux direct pendant quâ€™il est dÃ©tecter dans la console. Il fera un rapport sur chaque frame dÃ©tectÃ© pendant quâ€™il progresse. La valeur par dÃ©faut est â€˜Falseâ€™
+
+ -- *paramÃ¨tre* **return_detected_frame** (optionnel) : 
+Ce paramÃ¨tre vous permet de retourner le frame dÃ©tectÃ© comme tableau Numpy pour chaque frame, seconde et minute de la vidÃ©o dÃ©tectÃ©e. Le tableau Numpy retournÃ© sera envoyÃ© respectivement a **per_frame_function**, **per_second_function** et **per_minute_function** (dÃ©tails ci-dessous)
  
 
- -- *paramètre* **camera_input** (optionnel) : Ce paramètre peut être assigne en remplacement de **input_file_path** si vous voulez détecter des objets dans le flux vidéo de la caméra. Vous devez instancier la fonction **VideoCapture()** d’ OpenCV et de charger l’objet dans ce paramètre. 
+ -- *paramÃ¨tre* **camera_input** (optionnel) : Ce paramÃ¨tre peut Ãªtre assigne en remplacement de **input_file_path** si vous voulez dÃ©tecter des objets dans le flux vidÃ©o de la camÃ©ra. Vous devez instancier la fonction **VideoCapture()** dâ€™ OpenCV et de charger lâ€™objet dans ce paramÃ¨tre. 
 
  
 
-    Ci-dessous un exemple complet de code :: 
+    Ci-dessous un exemple complet de codeÂ :: 
 
         from imageai.Detection import VideoObjectDetection
         import os
@@ -124,29 +124,29 @@ Ce paramètre vous permet de retourner le frame détecté comme tableau Numpy pour 
 
 
 
- -- *paramètre* **minimum_percentage_probability** (optionnel) : Ce paramètre est utilisé pour déterminer l’intégrité des résultats de détection. Diminuer la valeur permet d’afficher plus d’objets alors que l’accroitre permet de s’assurer que les objets détectés ont la précision la plus élevée. La valeur par défaut est 50.    
+ -- *paramÃ¨tre* **minimum_percentage_probability** (optionnel) : Ce paramÃ¨tre est utilisÃ© pour dÃ©terminer lâ€™intÃ©gritÃ© des rÃ©sultats de dÃ©tection. Diminuer la valeur permet dâ€™afficher plus dâ€™objets alors que lâ€™accroitre permet de sâ€™assurer que les objets dÃ©tectÃ©s ont la prÃ©cision la plus Ã©levÃ©e. La valeur par dÃ©faut est 50.    
 
 
- -- *paramètre* **display_percentage_probability** (optionnel) :  Ce paramètre peut être utilisé pour cacher le pourcentage de probabilité pour chaque objet détecté dans la vidéo détecté si sa valeur est ‘False’. La valeur par défaut est ‘True’. 
+ -- *paramÃ¨tre* **display_percentage_probability** (optionnel) :  Ce paramÃ¨tre peut Ãªtre utilisÃ© pour cacher le pourcentage de probabilitÃ© pour chaque objet dÃ©tectÃ© dans la vidÃ©o dÃ©tectÃ© si sa valeur est â€˜Falseâ€™. La valeur par dÃ©faut est â€˜Trueâ€™. 
 
 
- -- *paramètre* **display_object_name** (optionnel) :  Ce paramètre peut être utilise pour cacher le nom de chaque objet détecte dans la vidéo s’il est défini à False. La valeur par défaut est True. 
+ -- *paramÃ¨tre* **display_object_name** (optionnel) :  Ce paramÃ¨tre peut Ãªtre utilise pour cacher le nom de chaque objet dÃ©tecte dans la vidÃ©o sâ€™il est dÃ©fini Ã  False. La valeur par dÃ©faut est True. 
 
 
- -- *paramètre* **save_detected_video** (optionnel) : Ce paramètre peut être utilisé pour sauvegarder ou non la vidéo de détection. Sa valeur par défaut est True.  
+ -- *paramÃ¨tre* **save_detected_video** (optionnel) : Ce paramÃ¨tre peut Ãªtre utilisÃ© pour sauvegarder ou non la vidÃ©o de dÃ©tection. Sa valeur par dÃ©faut est True.  
 
- -- *paramètre* **per_frame_function** (optionnel) : Ce paramètre pour permet de transmettre le nom d’une fonction que vous définissez. Puis, pour chaque frame de la vidéo qui est détectée, la fonction sera définie dans le paramètre qui sera exécuté et la donnée analytique de la vidéo sera transmise à la fonction. Les données renvoyées peuvent être visualisées ou enregistrées dans une base de données NoSQL pour une utilisation et visualisation ultérieure.  
+ -- *paramÃ¨tre* **per_frame_function** (optionnel) : Ce paramÃ¨tre pour permet de transmettre le nom dâ€™une fonction que vous dÃ©finissez. Puis, pour chaque frame de la vidÃ©o qui est dÃ©tectÃ©e, la fonction sera dÃ©finie dans le paramÃ¨tre qui sera exÃ©cutÃ© et la donnÃ©e analytique de la vidÃ©o sera transmise Ã  la fonction. Les donnÃ©es renvoyÃ©es peuvent Ãªtre visualisÃ©es ou enregistrÃ©es dans une base de donnÃ©es NoSQL pour une utilisation et visualisation ultÃ©rieure.  
 
-    Ci-dessous un exemple complet de code :: 
+    Ci-dessous un exemple complet de codeÂ :: 
 
 
         """
 
-Ce paramètre vous permet de définir dans une fonction ou vous voulez faire une exécution chaque fois qu’une image de vidéo est détectée. Si ce paramètre est défini par une fonction, après qu’une image de la vidéo soit détectée, la fonction sera exécutée avec les valeurs suivantes en entrée :
-* Numéro de position de la frame de la vidéo.
-* Un tableau de dictionnaires, avec chaque dictionnaire correspondant à chaque objet détecté. Chaque dictionnaire contient : 'name', 'percentage_probability' et 'box_points'
-* Un dictionnaire avec pour clefs le nom de chaque unique objet et le nombre d’instance de chaque objet présent.
-* Si return_detected_frame est défini a ‘True’, le tableau Numpy de la frame détectée sera transmis comme quatrième valeur dans la fonction. 
+Ce paramÃ¨tre vous permet de dÃ©finir dans une fonction ou vous voulez faire une exÃ©cution chaque fois quâ€™une image de vidÃ©o est dÃ©tectÃ©e. Si ce paramÃ¨tre est dÃ©fini par une fonction, aprÃ¨s quâ€™une image de la vidÃ©o soit dÃ©tectÃ©e, la fonction sera exÃ©cutÃ©e avec les valeurs suivantes en entrÃ©eÂ :
+* NumÃ©ro de position de la frame de la vidÃ©o.
+* Un tableau de dictionnaires, avec chaque dictionnaire correspondant Ã  chaque objet dÃ©tectÃ©. Chaque dictionnaire contientÂ : 'name', 'percentage_probability' et 'box_points'
+* Un dictionnaire avec pour clefs le nom de chaque unique objet et le nombre dâ€™instance de chaque objet prÃ©sent.
+* Si return_detected_frame est dÃ©fini a â€˜Trueâ€™, le tableau Numpy de la frame dÃ©tectÃ©e sera transmis comme quatriÃ¨me valeur dans la fonction. 
 
                 """
 
@@ -170,7 +170,7 @@ Ce paramètre vous permet de définir dans une fonction ou vous voulez faire une e
         video_detector.detectObjectsFromVideo(input_file_path=os.path.join(execution_path, "traffic.mp4"), output_file_path=os.path.join(execution_path, "video_frame_analysis") ,  frames_per_second=20, per_frame_function=forFrame,  minimum_percentage_probability=30)
 
 
-Dans l’exemple ci-dessus, chaque image ou frame de la vidéo est traitée et détectée, la fonction va recevoir et renvoyer les données analytiques pour chaque objet détecté dans la frame de la vidéo comme vous pouvez le voir ci-dessous :: 
+Dans lâ€™exemple ci-dessus, chaque image ou frame de la vidÃ©o est traitÃ©e et dÃ©tectÃ©e, la fonction va recevoir et renvoyer les donnÃ©es analytiques pour chaque objet dÃ©tectÃ© dans la frame de la vidÃ©o comme vous pouvez le voir ci-dessousÂ :: 
 
 
         Output for each object : [{'box_points': (362, 295, 443, 355), 'name': 'boat', 'percentage_probability': 26.666194200515747}, {'box_points': (319, 245, 386, 296), 'name': 'boat', 'percentage_probability': 30.052968859672546}, {'box_points': (219, 308, 341, 358), 'name': 'boat', 'percentage_probability': 47.46982455253601}, {'box_points': (589, 198, 621, 241), 'name': 'bus', 'percentage_probability': 24.62330162525177}, {'box_points': (519, 181, 583, 263), 'name': 'bus', 'percentage_probability': 27.446213364601135}, {'box_points': (493, 197, 561, 272), 'name': 'bus', 'percentage_probability': 59.81815457344055}, {'box_points': (432, 187, 491, 240), 'name': 'bus', 'percentage_probability': 64.42965269088745}, {'box_points': (157, 225, 220, 255), 'name': 'car', 'percentage_probability': 21.150341629981995}, {'box_points': (324, 249, 377, 293), 'name': 'car', 'percentage_probability': 24.089913070201874}, {'box_points': (152, 275, 260, 327), 'name': 'car', 'percentage_probability': 30.341443419456482}, {'box_points': (433, 198, 485, 244), 'name': 'car', 'percentage_probability': 37.205660343170166}, {'box_points': (184, 226, 233, 260), 'name': 'car', 'percentage_probability': 38.52525353431702}, {'box_points': (3, 296, 134, 359), 'name': 'car', 'percentage_probability': 47.80363142490387}, {'box_points': (357, 302, 439, 359), 'name': 'car', 'percentage_probability': 47.94844686985016}, {'box_points': (481, 266, 546, 314), 'name': 'car', 'percentage_probability': 65.8585786819458}, {'box_points': (597, 269, 624, 318), 'name': 'person', 'percentage_probability': 27.125394344329834}]
@@ -178,7 +178,7 @@ Dans l’exemple ci-dessus, chaque image ou frame de la vidéo est traitée et détec
         Output count for unique objects : {'bus': 4, 'boat': 3, 'person': 1, 'car': 8}
 
         ------------END OF A FRAME --------------
-Ci-dessous est le code complet qui a une fonction qui récupère les données analytiques et les visualise ; ainsi que la frame détectée en temps réel pendant que la vidéo est traitée et analysée ::
+Ci-dessous est le code complet qui a une fonction qui rÃ©cupÃ¨re les donnÃ©es analytiques et les visualiseÂ ; ainsi que la frame dÃ©tectÃ©e en temps rÃ©el pendant que la vidÃ©o est traitÃ©e et analysÃ©eÂ ::
 
 
         from imageai.Detection import VideoObjectDetection
@@ -239,25 +239,25 @@ Ci-dessous est le code complet qui a une fonction qui récupère les données analy
         video_detector.detectObjectsFromVideo(input_file_path=os.path.join(execution_path, "traffic.mp4"), output_file_path=os.path.join(execution_path, "video_frame_analysis") ,  frames_per_second=20, per_frame_function=forFrame,  minimum_percentage_probability=30, return_detected_frame=True)
 
 
- -- *paramètre* **per_second_function** (optionnel) : Ce paramètre vous permet de transmettre le nom d’une fonction que vous définissez. Puis, pour chaque seconde de la vidéo qui est détectée, la fonction sera transmise dans le paramètre sera exécutée et les données analytiques de la vidéo seront envoyées dans la fonction. Les données renvoyées peuvent être visualisées ou sauvegardées dans une base de données NoSQL pour une utilisation et visualisation future.  
+ -- *paramÃ¨tre* **per_second_function** (optionnel) : Ce paramÃ¨tre vous permet de transmettre le nom dâ€™une fonction que vous dÃ©finissez. Puis, pour chaque seconde de la vidÃ©o qui est dÃ©tectÃ©e, la fonction sera transmise dans le paramÃ¨tre sera exÃ©cutÃ©e et les donnÃ©es analytiques de la vidÃ©o seront envoyÃ©es dans la fonction. Les donnÃ©es renvoyÃ©es peuvent Ãªtre visualisÃ©es ou sauvegardÃ©es dans une base de donnÃ©es NoSQL pour une utilisation et visualisation future.  
 
-    Ci-dessous un exemple complet de code :: 
+    Ci-dessous un exemple complet de codeÂ :: 
 
         """
-	  Ce paramètre vous permet de transmettre dans une fonction où vous voulez faire une exécuter après que chaque seconde de la vidéo soit détectée.  Si le paramètre est défini comme une fonction, seconde après que le vidéo soit détecté, la fonction sera exécutée avec les valeurs suivantes en argument :
+	  Ce paramÃ¨tre vous permet de transmettre dans une fonction oÃ¹ vous voulez faire une exÃ©cuter aprÃ¨s que chaque seconde de la vidÃ©o soit dÃ©tectÃ©e.  Si le paramÃ¨tre est dÃ©fini comme une fonction, seconde aprÃ¨s que le vidÃ©o soit dÃ©tectÃ©, la fonction sera exÃ©cutÃ©e avec les valeurs suivantes en argumentÂ :
 
-        -- numéro de position du second 
-        -- un tableau de dictionnaire dont les clefs sont les numéros de position de chaque frame présente à la dernière seconde, et la valeur de chaque clef est le tableau de chaque frame qui contient les dictionnaires de chaque objet détecté dans la frame.
+        -- numÃ©ro de position du second 
+        -- un tableau de dictionnaire dont les clefs sont les numÃ©ros de position de chaque frame prÃ©sente Ã  la derniÃ¨re seconde, et la valeur de chaque clef est le tableau de chaque frame qui contient les dictionnaires de chaque objet dÃ©tectÃ© dans la frame.
 
 
 
-        -- Un tableau de dictionnaires, avec chaque dictionnaire à chaque frame de la seconde précédente, et les clés pour chaque dictionnaire sont les noms de numéros d’objets uniques détectés dans chaque frame, et les clés sont le nombre d’instances des objets trouvés dans le frame. 
+        -- Un tableau de dictionnaires, avec chaque dictionnaire Ã  chaque frame de la seconde prÃ©cÃ©dente, et les clÃ©s pour chaque dictionnaire sont les noms de numÃ©ros dâ€™objets uniques dÃ©tectÃ©s dans chaque frame, et les clÃ©s sont le nombre dâ€™instances des objets trouvÃ©s dans le frame. 
 
  
-        -- Un dictionnaire avec pour clé le nom de chaque unique objet détecté dans toutes les secondes passées, at les valeurs clés sont les moyennes d’instance d’objets trouvés dans toutes les frames contenus dans les secondes passées. 
+        -- Un dictionnaire avec pour clÃ© le nom de chaque unique objet dÃ©tectÃ© dans toutes les secondes passÃ©es, at les valeurs clÃ©s sont les moyennes dâ€™instance dâ€™objets trouvÃ©s dans toutes les frames contenus dans les secondes passÃ©es. 
 
 
-        -- Si return_detected_frame est défini aa ‘True’, le tableau Numpy du frame de détection sera envoyé comme cinquième paramètre dans la fonction. 
+        -- Si return_detected_frame est dÃ©fini aa â€˜Trueâ€™, le tableau Numpy du frame de dÃ©tection sera envoyÃ© comme cinquiÃ¨me paramÃ¨tre dans la fonction. 
 
         """
 
@@ -283,7 +283,7 @@ Ci-dessous est le code complet qui a une fonction qui récupère les données analy
 
 
 
-Dans l’exemple ci-dessus, chaque seconde dans la vidéo est traitée et détectée, la fonction va recevoir et renvoyer les données analytiques des objets détectés dans la vidéo comme vous pouvez le voir ci-dessous :: 
+Dans lâ€™exemple ci-dessus, chaque seconde dans la vidÃ©o est traitÃ©e et dÃ©tectÃ©e, la fonction va recevoir et renvoyer les donnÃ©es analytiques des objets dÃ©tectÃ©s dans la vidÃ©o comme vous pouvez le voir ci-dessousÂ :: 
 
 
         Array for the outputs of each frame [[{'box_points': (362, 295, 443, 355), 'name': 'boat', 'percentage_probability': 26.666194200515747}, {'box_points': (319, 245, 386, 296), 'name': 'boat', 'percentage_probability': 30.052968859672546}, {'box_points': (219, 308, 341, 358), 'name': 'boat', 'percentage_probability': 47.46982455253601}, {'box_points': (589, 198, 621, 241), 'name': 'bus', 'percentage_probability': 24.62330162525177}, {'box_points': (519, 181, 583, 263), 'name': 'bus', 'percentage_probability': 27.446213364601135}, {'box_points': (493, 197, 561, 272), 'name': 'bus', 'percentage_probability': 59.81815457344055}, {'box_points': (432, 187, 491, 240), 'name': 'bus', 'percentage_probability': 64.42965269088745}, {'box_points': (157, 225, 220, 255), 'name': 'car', 'percentage_probability': 21.150341629981995}, {'box_points': (324, 249, 377, 293), 'name': 'car', 'percentage_probability': 24.089913070201874}, {'box_points': (152, 275, 260, 327), 'name': 'car', 'percentage_probability': 30.341443419456482}, {'box_points': (433, 198, 485, 244), 'name': 'car', 'percentage_probability': 37.205660343170166}, {'box_points': (184, 226, 233, 260), 'name': 'car', 'percentage_probability': 38.52525353431702}, {'box_points': (3, 296, 134, 359), 'name': 'car', 'percentage_probability': 47.80363142490387}, {'box_points': (357, 302, 439, 359), 'name': 'car', 'percentage_probability': 47.94844686985016}, {'box_points': (481, 266, 546, 314), 'name': 'car', 'percentage_probability': 65.8585786819458}, {'box_points': (597, 269, 624, 318), 'name': 'person', 'percentage_probability': 27.125394344329834}],
@@ -306,7 +306,7 @@ Dans l’exemple ci-dessus, chaque seconde dans la vidéo est traitée et détectée, 
 
         ------------END OF A SECOND --------------
 
-Ci-dessous est le code complet qui a une fonction qui analyse les données analytiques et les visualise, et le frame détecté à la fin de la seconde en temps réel pendant que la vidéo est traitée et analysée : 
+Ci-dessous est le code complet qui a une fonction qui analyse les donnÃ©es analytiques et les visualise, et le frame dÃ©tectÃ© Ã Â la fin de la seconde en temps rÃ©el pendant que la vidÃ©o est traitÃ©e et analysÃ©e : 
 
         from imageai.Detection import VideoObjectDetection
         import os
@@ -369,10 +369,10 @@ Ci-dessous est le code complet qui a une fonction qui analyse les données analyt
 
 
 
- -- *paramètre* **per_minute_function** (optionnel) :  Ce paramètre peut être transmis en argument du nom de la fonction que vous définissez. Puis, pour chaque frame de la vidéo qui est détectée, le paramètre qui a été transmis dans la fonction sera interprété et les données analytiques de la vidéo seront transmis à la fonction. Les données retournées sont de même nature que **per_second_function** ; la différence est qu’elle ne tient compte que de tous les frames de la dernière minute de la vidéo. 
+ -- *paramÃ¨tre* **per_minute_function** (optionnel) :  Ce paramÃ¨tre peut Ãªtre transmis en argument du nom de la fonction que vous dÃ©finissez. Puis, pour chaque frame de la vidÃ©o qui est dÃ©tectÃ©e, le paramÃ¨tre qui a Ã©tÃ© transmis dans la fonction sera interprÃ©tÃ© et les donnÃ©es analytiques de la vidÃ©o seront transmis Ã  la fonction. Les donnÃ©es retournÃ©es sont de mÃªme nature que **per_second_function**Â ; la diffÃ©rence est quâ€™elle ne tient compte que de tous les frames de la derniÃ¨re minute de la vidÃ©o. 
 
     
-	Retrouvez une exemple de fonction pour ces paramètres ci-dessous :: 
+	Retrouvez une exemple de fonction pour ces paramÃ¨tres ci-dessousÂ :: 
 
         def forMinute(minute_number, output_arrays, count_arrays, average_output_count):
             print("MINUTE : ", minute_number)
@@ -383,10 +383,10 @@ Ci-dessous est le code complet qui a une fonction qui analyse les données analyt
  
 
 
- -- *paramètre* **video_complete_function** (optionnel) :  Ce paramètre peut être transmis en argument d’une fonction que vous définissez. Une fois que tous les frames de la vidéo sont totalement détectés, le paramètre transmis sera interprété et les données analytiques de la vidéo seront transmis à la fonction. Les données retournées ont la même nature que **per_second_function** et **per_minute_function** ; les différences sont qu’aucun index n’est renvoyé et ici tous les frames de la vidéo sont couvertes.  
+ -- *paramÃ¨tre* **video_complete_function** (optionnel) :  Ce paramÃ¨tre peut Ãªtre transmis en argument dâ€™une fonction que vous dÃ©finissez. Une fois que tous les frames de la vidÃ©o sont totalement dÃ©tectÃ©s, le paramÃ¨tre transmis sera interprÃ©tÃ© et les donnÃ©es analytiques de la vidÃ©o seront transmis Ã  la fonction. Les donnÃ©es retournÃ©es ont la mÃªme nature que **per_second_function** et **per_minute_function**Â ; les diffÃ©rences sont quâ€™aucun index nâ€™est renvoyÃ© et ici tous les frames de la vidÃ©o sont couvertes.  
 
  
-	Retrouvez une exemple de fonction pour ces paramètres ci-dessous :: 
+	Retrouvez une exemple de fonction pour ces paramÃ¨tres ci-dessousÂ :: 
    
 
         def forFull(output_arrays, count_arrays, average_output_count):

@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Apprentissage personnalisé et prédiction des Classes
+Apprentissage personnalis≈Ω et pr≈Ωdiction des Classes
 ======================================
-**ImageAI** fournit des classes puissante et néanmoins facile à utiliser pour entrainer des algorithmes a la pointe de la technologies tel que **SqueezeNet**, **ResNet** , **InceptionV3** et  **DenseNet** sur votre propre base de données avec juste  **5 lignes de code** pour générer votre propre modèle personnalisé. 
-Une fois que vous avez entrainé votre propre modèle, vous pouvez utiliser la classe **CustomImagePrediction** fournit par **ImageAI** pour utiliser votre modèle pour reconnaitre et faire la détection sur une image ou un ensemble d’images. 
+**ImageAI** fournit des classes puissante et n≈Ωanmoins facile ÀÜ utiliser pour entrainer des algorithmes a la pointe de la technologies tel que **SqueezeNet**, **ResNet** , **InceptionV3** et  **DenseNet** sur votre propre base de donn≈Ωes avec juste  **5 lignes de code** pour g≈Ωn≈Ωrer votre propre mod¬èle personnalis≈Ω. 
+Une fois que vous avez entrain≈Ω votre propre mod¬èle, vous pouvez utiliser la classe **CustomImagePrediction** fournit par **ImageAI** pour utiliser votre mod¬èle pour reconnaitre et faire la d≈Ωtection sur une image ou un ensemble d√ïimages. 
 
 
 
@@ -14,33 +14,33 @@ Une fois que vous avez entrainé votre propre modèle, vous pouvez utiliser la cla
 
 
 
-La classe **ModelTraining** vous permet d’entrainer un des quatre algorithme d’apprentissage profond suivant (**SqueezeNet**, **ResNet**
-, **InceptionV3** et **DenseNet**) sur votre base de données d’images pour générer votre propre modèle. Votre base de données d’images doit contenir au moins deux différentes classes/types d’images (chat et chien) et vous devez ressembler au moins 500 images de chaque classe pour obtenir le maximum de précision possible.  
+La classe **ModelTraining** vous permet d√ïentrainer un des quatre algorithme d√ïapprentissage profond suivant (**SqueezeNet**, **ResNet**
+, **InceptionV3** et **DenseNet**) sur votre base de donn≈Ωes d√ïimages pour g≈Ωn≈Ωrer votre propre mod¬èle. Votre base de donn≈Ωes d√ïimages doit contenir au moins deux diff≈Ωrentes classes/types d√ïimages (chat et chien) et vous devez ressembler au moins 500 images de chaque classe pour obtenir le maximum de pr≈Ωcision possible.  
 
-Le processus d’entrainement généré un fichier JSON qui fait une correspondance entre les types d’objets dans votre base d’images et créé des modèles.
-Vous ferez le choix du modèle avec la précision la plus élevée et qui puisse faire la prédiction en utilisant le modèle et le fichier JSON généré. 
+Le processus d√ïentrainement g≈Ωn≈Ωr≈Ω un fichier JSON qui fait une correspondance entre les types d√ïobjets dans votre base d√ïimages et cr≈Ω≈Ω des mod¬èles.
+Vous ferez le choix du mod¬èle avec la pr≈Ωcision la plus ≈Ωlev≈Ωe et qui puisse faire la pr≈Ωdiction en utilisant le mod¬èle et le fichier JSON g≈Ωn≈Ωr≈Ω. 
 
-Puisse la tâche d’apprentissage est gourmande en ressource, nous recommandons fortement de la faire à l’aide d’un ordinateur équipé d’un GPU NVIDIA et ayant le version GPU de Tensorflow installée. Faire l’apprentissage sur un CPU va demander beaucoup d’heures et de jours. Avec un système informatique équipé d’un GPU NVIDIA cela ne devrait prendre que quelques heures. Vous pouvez utiliser Google Colab pour cette expérience, puisqu’il est équipé d’un GPU NVIDIA K80.
+Puisse la t‚Ä∞che d√ïapprentissage est gourmande en ressource, nous recommandons fortement de la faire ÀÜ l√ïaide d√ïun ordinateur ≈Ωquip≈Ω d√ïun GPU NVIDIA et ayant le version GPU de Tensorflow install≈Ωe. Faire l√ïapprentissage sur un CPU va demander beaucoup d√ïheures et de jours. Avec un syst¬ème informatique ≈Ωquip≈Ω d√ïun GPU NVIDIA cela ne devrait prendre que quelques heures. Vous pouvez utiliser Google Colab pour cette exp≈Ωrience, puisqu√ïil est ≈Ωquip≈Ω d√ïun GPU NVIDIA K80.
 
-Pour entrainer votre modèle de prédiction, vous devez préparer les images que vous voulez utiliser pour entrainer votre modèle. Vous préparerez les images comme suit :
+Pour entrainer votre mod¬èle de pr≈Ωdiction, vous devez pr≈Ωparer les images que vous voulez utiliser pour entrainer votre mod¬èle. Vous pr≈Ωparerez les images comme suit√ä:
 
  
 
- -- Créer un dossier avec le nom que vous aimeriez donner avec votre base de données (ex: Chats) 
+ -- Cr≈Ωer un dossier avec le nom que vous aimeriez donner avec votre base de donn≈Ωes (ex: Chats) 
 
- -- Dans le dossier que vous avez précédemment crée, créer un dossier que vous nommerez ‘train’ 
+ -- Dans le dossier que vous avez pr≈Ωc≈Ωdemment cr≈Ωe, cr≈Ωer un dossier que vous nommerez √îtrain√ï 
  
- -- A cote du dossier train, créer un autre dossier et nommez le ‘test’ 
+ -- A cote du dossier train, cr≈Ωer un autre dossier et nommez le √îtest√ï 
  
- -- Dans le dossier ‘train’, créez un dossier pour chaque type d’objets que vous aimeriez que votre modèle reconnaisse et nomme le dossier selon la classe à prédire (ex : chien, chat, écureuil, serpents) 
+ -- Dans le dossier √îtrain√ï, cr≈Ωez un dossier pour chaque type d√ïobjets que vous aimeriez que votre mod¬èle reconnaisse et nomme le dossier selon la classe ÀÜ pr≈Ωdire (ex√ä: chien, chat, ≈Ωcureuil, serpents) 
  
- -- Dans chaque dossier présent dans votre dossier ‘train’, mettez-y les images de chaque objet ou classe. Ces images seront utilisées pour l’apprentissage de votre modèle.
+ -- Dans chaque dossier pr≈Ωsent dans votre dossier √îtrain√ï, mettez-y les images de chaque objet ou classe. Ces images seront utilis≈Ωes pour l√ïapprentissage de votre mod¬èle.
  
- -- pour générer un modèle qui puisse être viable pour des applications robustes, Je vous recommande d’avoir au moins 500 images ou de plus par objets. 1000 images per objets serait mieux.  
+ -- pour g≈Ωn≈Ωrer un mod¬èle qui puisse ¬être viable pour des applications robustes, Je vous recommande d√ïavoir au moins 500 images ou de plus par objets. 1000 images per objets serait mieux.  
  
- -- Dans le dossier ‘Test’, créer des dossiers et nommez les selon les noms que vous avez utilisé pour le dossier ‘Train’. Mettez environ 100 à 200 images correspondantes dans chaque dossier. Ces images seront celle utilisées pour tester le modèle après l’avoir entrainé.
+ -- Dans le dossier √îTest√ï, cr≈Ωer des dossiers et nommez les selon les noms que vous avez utilis≈Ω pour le dossier √îTrain√ï. Mettez environ 100 ÀÜ 200 images correspondantes dans chaque dossier. Ces images seront celle utilis≈Ωes pour tester le mod¬èle apr¬ès l√ïavoir entrain≈Ω.
  
- -- Une fois que vous avez fait cela, la structure des dossiers de votre base d’images devrait être comme suit::
+ -- Une fois que vous avez fait cela, la structure des dossiers de votre base d√ïimages devrait ¬être comme suit::
 
     animaux//train//chien//chien-train-images
     animaux//train//chat// chat -train-images
@@ -54,64 +54,64 @@ Pour entrainer votre modèle de prédiction, vous devez préparer les images que vo
 
 
 
-Une fois que votre base de données est prête, vous pouvez créer une instance de la classe **ModelTraining**. Retrouver un exemple ci-dessous :: 
+Une fois que votre base de donn≈Ωes est pr¬ête, vous pouvez cr≈Ωer une instance de la classe **ModelTraining**. Retrouver un exemple ci-dessous√ä:: 
 
     from imageai.Prediction.Custom import ModelTraining
 
     model_trainer = ModelTraining()
 
-Une fois que vous avez créé l’instance ci-dessous, vous pouvez utiliser les fonctions ci-dessous pour commencer le processus d’entrainement. 
+Une fois que vous avez cr≈Ω≈Ω l√ïinstance ci-dessous, vous pouvez utiliser les fonctions ci-dessous pour commencer le processus d√ïentrainement. 
 
 
-* **.setModelTypeAsSqueezeNet()** , Cette fonction établit comme type de modèle pour votre instance d’entrainement le modèle **SqueezeNet**, ceci  veut dire que l’algorithme **SqueezeNet** sera utilisé pour entrainer votre modèle. Trouver un exemple de code ci-dessous ::  
+* **.setModelTypeAsSqueezeNet()** , Cette fonction ≈Ωtablit comme type de mod¬èle pour votre instance d√ïentrainement le mod¬èle **SqueezeNet**, ceci  veut dire que l√ïalgorithme **SqueezeNet** sera utilis≈Ω pour entrainer votre mod¬èle. Trouver un exemple de code ci-dessous√ä::  
 
     model_trainer.setModelTypeAsSqueezeNet()
 
 
-* **.setModelTypeAsResNet()** , Cette fonction établit comme type de modèle pour votre instance d’entrainement le modèle **ResNet**, ceci  veut dire que l’algorithme **ResNet** sera utilisé pour entrainer votre modèle.  Trouver un exemple de code ci-dessous :: 
+* **.setModelTypeAsResNet()** , Cette fonction ≈Ωtablit comme type de mod¬èle pour votre instance d√ïentrainement le mod¬èle **ResNet**, ceci  veut dire que l√ïalgorithme **ResNet** sera utilis≈Ω pour entrainer votre mod¬èle.  Trouver un exemple de code ci-dessous :: 
 
     model_trainer.setModelTypeAsResNet()
 
 
-* **.setModelTypeAsInceptionV3()** , Cette fonction établit comme type de modèle pour votre instance d’entrainement le modèle ** InceptionV3**, ceci  veut dire que l’algorithme ** InceptionV3** sera utilisé pour entrainer votre modèle. Trouver un exemple de code ci-dessous :: 
+* **.setModelTypeAsInceptionV3()** , Cette fonction ≈Ωtablit comme type de mod¬èle pour votre instance d√ïentrainement le mod¬èle ** InceptionV3**, ceci  veut dire que l√ïalgorithme ** InceptionV3** sera utilis≈Ω pour entrainer votre mod¬èle. Trouver un exemple de code ci-dessous√ä:: 
 
     model_trainer.setModelTypeAsInceptionV3()
 
 
-* **.setModelTypeAsDenseNet()** , Cette fonction établit comme type de modèle pour votre instance d’entrainement le modèle **DenseNet**, ceci  veut dire que l’algorithme **DenseNet** sera utilisé pour entrainer votre modèle. Trouver un exemple de code ci-dessous ::  
+* **.setModelTypeAsDenseNet()** , Cette fonction ≈Ωtablit comme type de mod¬èle pour votre instance d√ïentrainement le mod¬èle **DenseNet**, ceci  veut dire que l√ïalgorithme **DenseNet** sera utilis≈Ω pour entrainer votre mod¬èle. Trouver un exemple de code ci-dessous√ä::  
 
     model_trainer.setModelTypeAsDenseNet()
 
-* **.setDataDirectory()** ,  Cette fonction prend en argument une chaine de caractère qui doit être le chemin vers le dossier qui contient les sous-dossiers **test** et **train** qui contiennent votre base d’images. Retrouver un exemple d’utilisation de la fonction, et de ses paramètres ci-dessous ::
+* **.setDataDirectory()** ,  Cette fonction prend en argument une chaine de caract¬ère qui doit ¬être le chemin vers le dossier qui contient les sous-dossiers **test** et **train** qui contiennent votre base d√ïimages. Retrouver un exemple d√ïutilisation de la fonction, et de ses param¬ètres ci-dessous ::
 
     prediction.setDataDirectory("C:/Users/Moses/Documents/Moses/AI/Custom Datasets/animaux")
 
- -- *parametre* **data_directory** (obligatoire) : Il s’agit du chemin vers le dossier qui contient votre base d’images. 
+ -- *parametre* **data_directory** (obligatoire) : Il s√ïagit du chemin vers le dossier qui contient votre base d√ïimages. 
 
-* **.trainModel()** , Il s’agit de la fonction qui commence le processus d’entrainement.  Une fois commencé, il créera un fichier JSON dans le dossier **dataset/json** (ex **animaux/json**) qui contient la correspondance de chaque classe dans la base d’images. Le fichier JSON sera utilisé pendant la détection personnalisée pour produire les résultats. Trouvez un exemple de code ci-dessous ::
+* **.trainModel()** , Il s√ïagit de la fonction qui commence le processus d√ïentrainement.  Une fois commenc≈Ω, il cr≈Ωera un fichier JSON dans le dossier **dataset/json** (ex **animaux/json**) qui contient la correspondance de chaque classe dans la base d√ïimages. Le fichier JSON sera utilis≈Ω pendant la d≈Ωtection personnalis≈Ωe pour produire les r≈Ωsultats. Trouvez un exemple de code ci-dessous ::
 
     model_trainer.trainModel(num_objects=4, num_experiments=100, enhance_data=True, batch_size=32, show_network_summary=True)
 
 
- -- *paramètre* **num_objects** (obligatoire) : Ceci fait référence au nombre de différentes classes dans votre base d’images.
+ -- *param¬ètre* **num_objects** (obligatoire) : Ceci fait r≈Ωf≈Ωrence au nombre de diff≈Ωrentes classes dans votre base d√ïimages.
  
- -- *paramètre* **num_experiments** (obligatoire) : Il représente le nombre de fois que l’algorithme sera entrainé sur la base d’images. La précision de votre entrainement augmente avec le nombre d’itérations ou d’entrainement. Cependant la précision atteint son maximum avec un certain nombre d’itération et nombre dépend de la taille et de la nature de base de données.
+ -- *param¬ètre* **num_experiments** (obligatoire) : Il repr≈Ωsente le nombre de fois que l√ïalgorithme sera entrain≈Ω sur la base d√ïimages. La pr≈Ωcision de votre entrainement augmente avec le nombre d√ïit≈Ωrations ou d√ïentrainement. Cependant la pr≈Ωcision atteint son maximum avec un certain nombre d√ïit≈Ωration et nombre d≈Ωpend de la taille et de la nature de base de donn≈Ωes.
  
- -- *paramètre* **enhance_data** (optionnel) : Ce paramètre est utilisé pour transformer votre base d’images en générant plus d’échantillons pour la phase d’entrainement. Par défaut sa valeur est ‘False’. Néanmoins, il est important de lui donner la valeur ‘True’ lorsque votre base d’images contient moins de 1000 images par classe.
+ -- *param¬ètre* **enhance_data** (optionnel) : Ce param¬ètre est utilis≈Ω pour transformer votre base d√ïimages en g≈Ωn≈Ωrant plus d√ï≈Ωchantillons pour la phase d√ïentrainement. Par d≈Ωfaut sa valeur est √îFalse√ï. N≈Ωanmoins, il est important de lui donner la valeur √îTrue√ï lorsque votre base d√ïimages contient moins de 1000 images par classe.
 
- -- *paramètre* **batch_size** (optionnel) : Pendant la phase d’entrainement, L’algorithme est entrainé sur un ensemble d’images en parallèle. A cause de cela, la valeur par défaut est mise à 32. Vous pouvez accroitre ou décroitre cette valeur selon votre connaissance du système que vous utilisez pour l’apprentissage. Si vous envisagez de changer cette valeur, vous devrez utiliser des multiples de 8 pour optimiser le processus d’apprentissage.   
+ -- *param¬ètre* **batch_size** (optionnel) : Pendant la phase d√ïentrainement, L√ïalgorithme est entrain≈Ω sur un ensemble d√ïimages en parall¬èle. A cause de cela, la valeur par d≈Ωfaut est mise ÀÜ 32. Vous pouvez accroitre ou d≈Ωcroitre cette valeur selon votre connaissance du syst¬ème que vous utilisez pour l√ïapprentissage. Si vous envisagez de changer cette valeur, vous devrez utiliser des multiples de 8 pour optimiser le processus d√ïapprentissage.   
 
- -- *paramètre* **show_network_summary** (optionnel) : Lorsque ce paramètre a la valeur ‘True’, il affiche la structure de l’algorithme que vous utilisez pour l’apprentissage sur vos images dans une petite console avant de commencer l’apprentissage. Sa valeur par défaut est ‘False’. 
+ -- *param¬ètre* **show_network_summary** (optionnel) : Lorsque ce param¬ètre a la valeur √îTrue√ï, il affiche la structure de l√ïalgorithme que vous utilisez pour l√ïapprentissage sur vos images dans une petite console avant de commencer l√ïapprentissage. Sa valeur par d≈Ωfaut est √îFalse√ï. 
  
- -- *paramètre* **initial_learning_rate** (optionnel) : Ce paramètre a une haute valeur technique. Il détermine et contrôle le comportement de votre apprentissage, ce qui est critique pour la précision à réaliser. Vous pouvez changer la valeur de ce paramètre si vous avez une pleine compréhension de sa fonctionnalité.  
+ -- *param¬ètre* **initial_learning_rate** (optionnel) : Ce param¬ètre a une haute valeur technique. Il d≈Ωtermine et contr‚Ñ¢le le comportement de votre apprentissage, ce qui est critique pour la pr≈Ωcision ÀÜ r≈Ωaliser. Vous pouvez changer la valeur de ce param¬ètre si vous avez une pleine compr≈Ωhension de sa fonctionnalit≈Ω.  
 
-  -- *training_image_size* **initial_learning_rate** (optionnel) : Il représente la taille que vos images prendront pendant le processus d’apprentissage, peu importe leur taille d’origine. La valeur par défaut est de 224 et elle ne doit pas aller en dessous de 100. Augmenter sa valeur permettra de gagner en précision mais augmentera aussi le temps d’apprentissage et vice-versa.  
+  -- *training_image_size* **initial_learning_rate** (optionnel) : Il repr≈Ωsente la taille que vos images prendront pendant le processus d√ïapprentissage, peu importe leur taille d√ïorigine. La valeur par d≈Ωfaut est de 224 et elle ne doit pas aller en dessous de 100. Augmenter sa valeur permettra de gagner en pr≈Ωcision mais augmentera aussi le temps d√ïapprentissage et vice-versa.  
 
 
 
 **Exemple de code pour un model apprentissage personnalise**
 
-Trouvez ci-dessous un exemple de code lors de l’apprentissage d’un modèle personnalisé sur votre base d’images :: 
+Trouvez ci-dessous un exemple de code lors de l√ïapprentissage d√ïun mod¬èle personnalis≈Ω sur votre base d√ïimages√ä:: 
 
     from imageai.Prediction.Custom import ModelTraining
 
@@ -121,7 +121,7 @@ Trouvez ci-dessous un exemple de code lors de l’apprentissage d’un modèle person
     model_trainer.trainModel(num_objects=10, num_experiments=100, enhance_data=True, batch_size=32, show_network_summary=True)
 
 
-Ci-dessous est un aperçu de résultat lorsque l’apprentissage commence ::
+Ci-dessous est un aper¬çu de r≈Ωsultat lorsque l√ïapprentissage commence√ä::
 
     Epoch 1/100
     1/25 [>.............................] - ETA: 52s - loss: 2.3026 - acc: 0.2500
@@ -151,15 +151,15 @@ Ci-dessous est un aperçu de résultat lorsque l’apprentissage commence ::
 
     25/25 [==============================] - 51s - loss: 2.3095 - acc: 0.0600 - val_loss: 2.3026 - val_acc: 0.1000
 
-Expliquons les détails ci-dessus :
+Expliquons les d≈Ωtails ci-dessus√ä:
 
-1. La ligne Epoch 1/100 signifie que le réseau fait le premier apprentissage sur les 100 voulus.  0
+1. La ligne Epoch 1/100 signifie que le r≈Ωseau fait le premier apprentissage sur les 100 voulus.  0
 
-2. La ligne  1/25 [>.............................] - ETA: 52s - loss: 2.3026 - acc: 0.2500 représente le nombre de groupe qui ont été entrainé dans la présente phase d’apprentissage.  
+2. La ligne  1/25 [>.............................] - ETA: 52s - loss: 2.3026 - acc: 0.2500 repr≈Ωsente le nombre de groupe qui ont ≈Ωt≈Ω entrain≈Ω dans la pr≈Ωsente phase d√ïapprentissage.  
 
-3. La ligne  Epoch 00000: sauvegarde le modèle à l’emplacement  C:\Users\User\PycharmProjects\ImageAITest\pets\models\modelex-000acc-0.100000.h5 à la fin de la phase d’apprentissage présente.  ex_000 représente le niveau d’apprentissage tandis que acc0.100000 et  valacc: 0.1000  représente la précision du modèle sur l’ensemble d’images ‘Test’ après le présent apprentissage(La valeur maximale de la précision est de 1.0). Ce résultat vous permet de connaitre le meilleur modèle a utiliser pour la détection sur vos images.
+3. La ligne  Epoch 00000: sauvegarde le mod¬èle ÀÜ l√ïemplacement  C:\Users\User\PycharmProjects\ImageAITest\pets\models\modelex-000acc-0.100000.h5 ÀÜ la fin de la phase d√ïapprentissage pr≈Ωsente.  ex_000 repr≈Ωsente le niveau d√ïapprentissage tandis que acc0.100000 et  valacc: 0.1000  repr≈Ωsente la pr≈Ωcision du mod¬èle sur l√ïensemble d√ïimages √îTest√ï apr¬ès le pr≈Ωsent apprentissage(La valeur maximale de la pr≈Ωcision est de 1.0). Ce r≈Ωsultat vous permet de connaitre le meilleur mod¬èle a utiliser pour la d≈Ωtection sur vos images.
 
-Une fois que vous avez terminé l’apprentissage de votre modèle termine, vous pouvez utiliser la classe **CustomImagePrediction**  décrite si dessous pour la détection avec votre modèle. 
+Une fois que vous avez termin≈Ω l√ïapprentissage de votre mod¬èle termine, vous pouvez utiliser la classe **CustomImagePrediction**  d≈Ωcrite si dessous pour la d≈Ωtection avec votre mod¬èle. 
 
 
 
@@ -167,87 +167,87 @@ Une fois que vous avez terminé l’apprentissage de votre modèle termine, vous pou
 **======= imageai.Prediction.Custom.CustomImagePrediction =======**
 
 
-Cette classe peut être considérée comme une réplique de **imageai.Prediction.ImagePrediction** puis qu’elle a les même fonctions, paramètres et résultats. La seule différence est que cette classe fonctionne avec votre modèle personnalisé. Vous aurez besoin de spécifier le chemin du fichier JSON généré pendant la phase d’apprentissage et aussi de spécifier le nombre de classe dans votre base d’image lors du chargement du modèle. Ci-dessous est un exemple de création d’instance de la classe ::
+Cette classe peut ¬être consid≈Ωr≈Ωe comme une r≈Ωplique de **imageai.Prediction.ImagePrediction** puis qu√ïelle a les m¬ême fonctions, param¬ètres et r≈Ωsultats. La seule diff≈Ωrence est que cette classe fonctionne avec votre mod¬èle personnalis≈Ω. Vous aurez besoin de sp≈Ωcifier le chemin du fichier JSON g≈Ωn≈Ωr≈Ω pendant la phase d√ïapprentissage et aussi de sp≈Ωcifier le nombre de classe dans votre base d√ïimage lors du chargement du mod¬èle. Ci-dessous est un exemple de cr≈Ωation d√ïinstance de la classe√ä::
 
 
     from imageai.Prediction.Custom import CustomImagePrediction
     
     prediction = CustomImagePrediction()
 
-Une fois que vous avez créé l’instance, vous pouvez utiliser les fonctions ci-dessous pour configurer les propriétés de votre instance et commencer le processus de détection et reconnaissance sur des images. 
+Une fois que vous avez cr≈Ω≈Ω l√ïinstance, vous pouvez utiliser les fonctions ci-dessous pour configurer les propri≈Ωt≈Ωs de votre instance et commencer le processus de d≈Ωtection et reconnaissance sur des images. 
 
 
-* **.setModelTypeAsSqueezeNet()** , Cette fonction établit comme type de modèle pour votre instance de reconnaissance et détection, le modèle **SqueezeNet**, ceci  veut dire que l’algorithme **SqueezeNet** généré pendant votre phase d’apprentissage personnalisée sera utilisé pour la tache de prédiction sur vos images. Trouver un exemple de code ci-dessous ::  
+* **.setModelTypeAsSqueezeNet()** , Cette fonction ≈Ωtablit comme type de mod¬èle pour votre instance de reconnaissance et d≈Ωtection, le mod¬èle **SqueezeNet**, ceci  veut dire que l√ïalgorithme **SqueezeNet** g≈Ωn≈Ωr≈Ω pendant votre phase d√ïapprentissage personnalis≈Ωe sera utilis≈Ω pour la tache de pr≈Ωdiction sur vos images. Trouver un exemple de code ci-dessous√ä::  
 
 
     prediction.setModelTypeAsSqueezeNet()
 
 
-* **. setModelTypeAsResNet()** , Cette fonction établit comme type de modèle pour votre instance de reconnaissance et détection, le modèle ** ResNet**, ceci  veut dire que l’algorithme **ResNet** généré pendant votre phase d’apprentissage personnalisée sera utilisé pour la tache de prédiction sur vos images. Trouver un exemple de code ci-dessous ::  
+* **. setModelTypeAsResNet()** , Cette fonction ≈Ωtablit comme type de mod¬èle pour votre instance de reconnaissance et d≈Ωtection, le mod¬èle ** ResNet**, ceci  veut dire que l√ïalgorithme **ResNet** g≈Ωn≈Ωr≈Ω pendant votre phase d√ïapprentissage personnalis≈Ωe sera utilis≈Ω pour la tache de pr≈Ωdiction sur vos images. Trouver un exemple de code ci-dessous√ä::  
 
 
     prediction.setModelTypeAsResNet()
 
-* **. setModelTypeAsInceptionV3 ()** , Cette fonction établit comme type de modèle pour votre instance de reconnaissance et détection, le modèle **InceptionV3**, ceci  veut dire que l’algorithme **InceptionV3** généré pendant votre phase d’apprentissage personnalisée sera utilisé pour la tache de prédiction sur vos images. Trouver un exemple de code ci-dessous ::  
+* **. setModelTypeAsInceptionV3 ()** , Cette fonction ≈Ωtablit comme type de mod¬èle pour votre instance de reconnaissance et d≈Ωtection, le mod¬èle **InceptionV3**, ceci  veut dire que l√ïalgorithme **InceptionV3** g≈Ωn≈Ωr≈Ω pendant votre phase d√ïapprentissage personnalis≈Ωe sera utilis≈Ω pour la tache de pr≈Ωdiction sur vos images. Trouver un exemple de code ci-dessous√ä::  
 
 
     prediction.setModelTypeAsInceptionV3()
 
 
-* **. setModelTypeAsDenseNet()** , Cette fonction établit comme type de modèle pour votre instance de reconnaissance et détection, le modèle ** DenseNet**, ceci  veut dire que l’algorithme **DenseNet** généré pendant votre phase d’apprentissage personnalisée sera utilisé pour la tache de prédiction sur vos images. Trouver un exemple de code ci-dessous ::  
+* **. setModelTypeAsDenseNet()** , Cette fonction ≈Ωtablit comme type de mod¬èle pour votre instance de reconnaissance et d≈Ωtection, le mod¬èle ** DenseNet**, ceci  veut dire que l√ïalgorithme **DenseNet** g≈Ωn≈Ωr≈Ω pendant votre phase d√ïapprentissage personnalis≈Ωe sera utilis≈Ω pour la tache de pr≈Ωdiction sur vos images. Trouver un exemple de code ci-dessous√ä::  
 
 
 
     prediction.setModelTypeAsDenseNet()
 
 
-* **.setModelPath()** , cette fonction accepte une chaine de caractère qui doit être le chemin vers le fichier modèle généré pendant votre phase d’apprentissage et doit correspondre au type de modèle que vous avez défini pour votre instance de reconnaissance d’images. Trouver un exemple de code, et de paramètres de fonction ci-dessous ::
+* **.setModelPath()** , cette fonction accepte une chaine de caract¬ère qui doit ¬être le chemin vers le fichier mod¬èle g≈Ωn≈Ωr≈Ω pendant votre phase d√ïapprentissage et doit correspondre au type de mod¬èle que vous avez d≈Ωfini pour votre instance de reconnaissance d√ïimages. Trouver un exemple de code, et de param¬ètres de fonction ci-dessous√ä::
 
 
     prediction.setModelPath("resnet_model_ex-020_acc-0.651714.h5")
 
- -- *paramètre* **model_path** (requis) : Il s’agit du chemin vers le fichier modèle téléchargé.  
+ -- *param¬ètre* **model_path** (requis) : Il s√ïagit du chemin vers le fichier mod¬èle t≈Ωl≈Ωcharg≈Ω.  
 
 
-* **.setJsonPath()** , cette fonction prend en argument une chaine de caractère qui représente le chemin vers le fichier JSON généré pendant la phase d’apprentissage du modèle personnalisé. Trouvez ci-dessous un exemple de code et de paramètres de la fonction ::
+* **.setJsonPath()** , cette fonction prend en argument une chaine de caract¬ère qui repr≈Ωsente le chemin vers le fichier JSON g≈Ωn≈Ωr≈Ω pendant la phase d√ïapprentissage du mod¬èle personnalis≈Ω. Trouvez ci-dessous un exemple de code et de param¬ètres de la fonction√ä::
 
  
     prediction.setJsonPath("model_class.json")
 
- -- *paramètre* **model_path** (requis) : Il s’agit du chemin vers le fichier modèle téléchargé.  
+ -- *param¬ètre* **model_path** (requis) : Il s√ïagit du chemin vers le fichier mod¬èle t≈Ωl≈Ωcharg≈Ω.  
 
 
-* **.loadModel()** , Cette fonction charge le modèle à partir du chemin spécifié dans votre appel de fonction ci-dessus pour votre instance de prédiction d’images. Au paramètre **num_objects** vous devrez donner la valeur correspondant au nombre de classes dans votre base d’images. Trouvez ci-dessous un exemple de code et de paramètres de la fonction ::
+* **.loadModel()** , Cette fonction charge le mod¬èle ÀÜ partir du chemin sp≈Ωcifi≈Ω dans votre appel de fonction ci-dessus pour votre instance de pr≈Ωdiction d√ïimages. Au param¬ètre **num_objects** vous devrez donner la valeur correspondant au nombre de classes dans votre base d√ïimages. Trouvez ci-dessous un exemple de code et de param¬ètres de la fonction√ä::
 
     prediction.loadModel(num_objects=4)
 
- -- *paramètre* **num_objects** (requis) : La valeur de ce paramètre doit correspondre au nombre de classe dans votre base d’images.  
+ -- *param¬ètre* **num_objects** (requis) : La valeur de ce param¬ètre doit correspondre au nombre de classe dans votre base d√ïimages.  
 
 
--- *paramètre* **prediction_speed** (optionnel) : Ce paramètre vous permet de réduire le temps de prédiction sur une image d’environ 80% ce qui conduit à une légère réduction de la précision. Ce paramètre prend des valeurs de type chaine de caractère. Les valeurs disponibles sont : 
-"normal", "fast", "faster" et "fastest". La valeur par défaut est "normal"
+-- *param¬ètre* **prediction_speed** (optionnel) : Ce param¬ètre vous permet de r≈Ωduire le temps de pr≈Ωdiction sur une image d√ïenviron 80% ce qui conduit ÀÜ une l≈Ωg¬ère r≈Ωduction de la pr≈Ωcision. Ce param¬ètre prend des valeurs de type chaine de caract¬ère. Les valeurs disponibles sont√ä: 
+"normal", "fast", "faster" et "fastest". La valeur par d≈Ωfaut est "normal"
 
 
-* **.predictImage()** , C’est la fonction qui accomplit à proprement parler la prédiction sur une image. Elle peut être appeler plusieurs fois sur plusieurs images une fois que le modèle a été charge dans l’instance de prédiction. Trouver ci-dessous un exemple de code, de paramètres de fonction ainsi que les valeurs renvoyées ::
+* **.predictImage()** , C√ïest la fonction qui accomplit ÀÜ proprement parler la pr≈Ωdiction sur une image. Elle peut ¬être appeler plusieurs fois sur plusieurs images une fois que le mod¬èle a ≈Ωt≈Ω charge dans l√ïinstance de pr≈Ωdiction. Trouver ci-dessous un exemple de code, de param¬ètres de fonction ainsi que les valeurs renvoy≈Ωes√ä::
 
     predictions, probabilities = prediction.predictImage("image1.jpg", result_count=2)
 
- -- *paramètre* **image_input** (requis) : Il fait référence au chemin vers votre image, le tableau de type Numpy de votre image ou le flux de votre image, dépendamment de type de valeur d’entrée spécifiée. 
+ -- *param¬ètre* **image_input** (requis) : Il fait r≈Ωf≈Ωrence au chemin vers votre image, le tableau de type Numpy de votre image ou le flux de votre image, d≈Ωpendamment de type de valeur d√ïentr≈Ωe sp≈Ωcifi≈Ωe. 
 
 
- -- *paramètre* **result_count** (optionnel) : il fait référence au nombre possible de prédiction qui peuvent être donne. Ce paramètre a pour valeur par défaut 5.   
+ -- *param¬ètre* **result_count** (optionnel) : il fait r≈Ωf≈Ωrence au nombre possible de pr≈Ωdiction qui peuvent ¬être donne. Ce param¬ètre a pour valeur par d≈Ωfaut 5.   
 
 
- -- *paramètre* **input_type** (optionnel) :  Il fait référence au type de la valeur d’entrée que vous passez au paramètre **image_input**. Il est de type ‘file’ par défaut et accepte ‘stream ’et ‘array ’aussi.
+ -- *param¬ètre* **input_type** (optionnel) :  Il fait r≈Ωf≈Ωrence au type de la valeur d√ïentr≈Ωe que vous passez au param¬ètre **image_input**. Il est de type √îfile√ï par d≈Ωfaut et accepte √îstream √ïet √îarray √ïaussi.
 
- -- *valeur retournée* **prediction_results** (une liste python) : 
-La première valeur retournée par la fonction **predictImage** est une liste qui contient tous les résultats possibles de prédiction. Les résultats sont ordonnés en ordre descendant de pourcentage de probabilité.
+ -- *valeur retourn≈Ωe* **prediction_results** (une liste python) : 
+La premi¬ère valeur retourn≈Ωe par la fonction **predictImage** est une liste qui contient tous les r≈Ωsultats possibles de pr≈Ωdiction. Les r≈Ωsultats sont ordonn≈Ωs en ordre descendant de pourcentage de probabilit≈Ω.
 
- -- *valeur retournée* **prediction_probabilities** (une liste python) : 
-La première valeur retournée par la fonction **predictImage** est une liste qui contient les pourcentages de probabilité correspondantes a toutes les prédictions possibles dans **prediction_results**
+ -- *valeur retourn≈Ωe* **prediction_probabilities** (une liste python) : 
+La premi¬ère valeur retourn≈Ωe par la fonction **predictImage** est une liste qui contient les pourcentages de probabilit≈Ω correspondantes a toutes les pr≈Ωdictions possibles dans **prediction_results**
 
 
-* **.predictMultipleImages()** , Cette fonction peut être utilisée pour effectuer la tache de prédiction sur 2 ou plusieurs images en une seule fois. Trouvez ci-dessous un exemple de code, paramètres de fonction et de valeurs renvoyées ::
+* **.predictMultipleImages()** , Cette fonction peut ¬être utilis≈Ωe pour effectuer la tache de pr≈Ωdiction sur 2 ou plusieurs images en une seule fois. Trouvez ci-dessous un exemple de code, param¬ètres de fonction et de valeurs renvoy≈Ωes√ä::
 
  
     results_array = multiple_prediction.predictMultipleImages(all_images_array, result_count_per_image=2)
@@ -258,21 +258,21 @@ La première valeur retournée par la fonction **predictImage** est une liste qui 
             print(predictions[index] , " : " , percentage_probabilities[index])
         print("-----------------------")
 
-  -- *paramètre* **sent_images_array** (requis) : Il fait référence a une liste qui contient le chemin vers vos fichiers image, vos tableau Numpy de vos images ou vos fichiers de flux d’images, dépendamment du type de valeur d’entrée spécifiée.   
+  -- *param¬ètre* **sent_images_array** (requis) : Il fait r≈Ωf≈Ωrence a une liste qui contient le chemin vers vos fichiers image, vos tableau Numpy de vos images ou vos fichiers de flux d√ïimages, d≈Ωpendamment du type de valeur d√ïentr≈Ωe sp≈Ωcifi≈Ωe.   
 
-  -- *paramètre* **result_count_per_image** (optionnel) : Il fait référence au nombre possible de prédictions qui doivent être données pour chaque image. Ce paramètre a pour valeur par défaut 2. 
-
-
--- *paramètre* **input_type** (optionnel) :  Il fait référence au format de vos images ont dans la liste du paramètre **sent_images_array**. Il est de type ‘file’ par défaut et accepte ‘stream ’et ‘array ’aussi. 
+  -- *param¬ètre* **result_count_per_image** (optionnel) : Il fait r≈Ωf≈Ωrence au nombre possible de pr≈Ωdictions qui doivent ¬être donn≈Ωes pour chaque image. Ce param¬ètre a pour valeur par d≈Ωfaut 2. 
 
 
-  -- *valeur retournée* **output_array** (une liste python) : 
-La valeur retournée par la fonction **predictMultipleImages** est une liste qui contient des dictionnaires. Chaque dictionnaire correspond à une image contenue dans le tableau envoyée à **sent_images_array**. 
-Chaque dictionnaire a une propriete "prediction_results" qui est une liste de tous les resultats de prediction pour l’image a cet indice aussi bien que la probabilite de prediction "prediction_probabilities" qui est une liste de pourcentage de probabilite correspondant a chaque resultat.
+-- *param¬ètre* **input_type** (optionnel) :  Il fait r≈Ωf≈Ωrence au format de vos images ont dans la liste du param¬ètre **sent_images_array**. Il est de type √îfile√ï par d≈Ωfaut et accepte √îstream √ïet √îarray √ïaussi. 
+
+
+  -- *valeur retourn≈Ωe* **output_array** (une liste python) : 
+La valeur retourn≈Ωe par la fonction **predictMultipleImages** est une liste qui contient des dictionnaires. Chaque dictionnaire correspond ÀÜ une image contenue dans le tableau envoy≈Ωe ÀÜ **sent_images_array**. 
+Chaque dictionnaire a une propriete "prediction_results" qui est une liste de tous les resultats de prediction pour l√ïimage a cet indice aussi bien que la probabilite de prediction "prediction_probabilities" qui est une liste de pourcentage de probabilite correspondant a chaque resultat.
 
 **Exemple de code**
 
-Trouvez ci-dessous un échantillon de code pour la prédiction personnalisé ::
+Trouvez ci-dessous un ≈Ωchantillon de code pour la pr≈Ωdiction personnalis≈Ω√ä::
 
     from imageai.Prediction.Custom import CustomImagePrediction
     import os
